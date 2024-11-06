@@ -44,13 +44,13 @@ React를 이용하여 현대적이고 직관적인 UI구축을 통해 UX 개선�
     </tr>
     <tr>
       <td align="center">
-        <a href='https://github.com/KSH7131'>GitHub</a>
+        <a href='https://github.com/KSH7131'>GitHub: KSH7131</a>
       </td>
       <td align="center">
-        <a href='https://github.com/EHEN123'>GitHub</a>
+        <a href='https://github.com/EHEN123'>GitHub: LeeHE</a>
       </td>
       <td align="center">
-        <a href='https://github.com/zzohae'>GitHub</a>
+        <a href='https://github.com/zzohae'>GitHub: zzohae</a>
       </td>
     </tr>
     <tr>
@@ -70,11 +70,11 @@ React를 이용하여 현대적이고 직관적인 UI구축을 통해 UX 개선�
 
 
 # 03. 개발 환경
-node v20.17.0
+node v20.17.0  
 Bootstrap v5.3.3
 
 # 04. 설계
-디자인을 토대로 컴포넌트 관계도와 정보구조도 Figjam에서 작성
+디자인을 토대로 컴포넌트 관계도와 정보구조도 Figjam에서 작성  
 1차
 <img width="100%" alt="컴포넌트관계도_1차" src="https://github.com/user-attachments/assets/334967ca-ff4c-4ff0-bc9b-22b3a5e020b9">
 
