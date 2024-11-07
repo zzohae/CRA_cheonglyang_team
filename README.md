@@ -76,8 +76,7 @@ Bootstrap v5.3.3
 # 04. 설계
 디자인을 토대로 컴포넌트 관계도와 정보구조도 Figjam에서 작성  
 1차
-<img width="100%" alt="컴포넌트관계도_1차" src="https://github.com/user-attachments/assets/d6f97c28-01ec-4914-bc52-76781aefe3c3">
-
+<img width="100%" alt="컴포넌트관계도_2차" src="https://github.com/user-attachments/assets/63a7449c-5dd0-4759-9f0e-fa96f87919d2">
 
 # 05. 개발 워크플로우
 * Branch 전략  
