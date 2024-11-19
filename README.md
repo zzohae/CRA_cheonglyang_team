@@ -1,3 +1,5 @@
+![README](https://github.com/user-attachments/assets/c14d2913-9b21-4692-9f7d-47b18392078b)  
+
 # 00. 프로젝트 개요
 청량리종합시장 온라인 쇼핑몰 "청량마켓몰" 리디자인 및 사용성 개선
 
@@ -103,8 +105,9 @@ Bootstrap v5.3.3
 |---|---|
 | Default | ![Default](./src/asset/svg/common/BI_mobile_Default.svg) |  
 | Inverse | ![Inverse](./src/asset/svg/common/BI_mobile_Inverse.svg) |
-| Milkit_D | ![Default](./src/asset/svg/common/BI(mealkit)_mobile_Default.svg) |
-| Milkit_I | ![Inverse](./src/asset/svg/common/BI(mealkit)_mobile_Inverse.svg) |
+| Milkit_D | ![BI(mealkit)_mobile_Default](https://github.com/user-attachments/assets/15d4e750-4aaa-41bc-b3d0-7befb8a8ba5d) |
+| Milkit_I | ![BI(mealkit)_mobile_Inverse](https://github.com/user-attachments/assets/7e719112-159c-4202-9fc9-dfa38edb2308) |
+
 
 
 ## 폰트
@@ -113,7 +116,6 @@ Bootstrap v5.3.3
 |---|---|
 | Pretendard   |  [github](https://github.com/orioncactus/pretendard) |
 
-**Note:** The Storybook UI includes the Nunito Sans webfont in the `font-family` declaration but *does not* require users to download it.
 
 ### 컬러
 | 메인 컬러     | 색상코드 |
