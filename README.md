@@ -81,3 +81,58 @@ Bootstrap v5.3.3
 # 05. 개발 워크플로우
 * Branch 전략  
   업무 분담과 효율적인 개발을 위해 개별 브랜치에서 기능 개발 등 작업
+
+# 06. 브랜드소개
+
+- [로고](#로고)
+- [아이콘](#아이콘)
+- [폰트](#폰트)
+- [컬러](#컬러)
+- [프레젠테이션](#프레젠테이션)
+
+## 로고
+
+| Version | Preview |
+|---|---|
+| Default | ![Default](./src/asset/svg/BI_desktop_Default.svg) |  
+| Inverse | ![Inverse](./src/asset/svg/BI_desktop_Inverse.svg) |
+
+## 아이콘
+
+| Version | Preview |
+|---|---|
+| Default | ![Default](./src/asset/svg/BI_mobile_Default.svg) |  
+| Inverse | ![Inverse](./src/asset/svg/BI_mobile_Inverse.svg) |
+| Milkit_D | ![Default](./src/asset/svg/BI(mealkit)_mobile_Default.svg) |
+| Milkit_I | ![Inverse](./src/asset/svg/BI(mealkit)_mobile_Inverse.svg) |
+
+
+## 폰트
+
+| Font  |  Link |
+|---|---|
+| Pretendard   |  [github](https://github.com/orioncactus/pretendard) |
+
+**Note:** The Storybook UI includes the Nunito Sans webfont in the `font-family` declaration but *does not* require users to download it.
+
+### 컬러
+| 메인 컬러     | 색상코드 |
+|------------|-----------|
+| 청량 BLUE | ![#214AEE](https://singlecolorimage.com/get/214AEE/15x15)  `214AEE` |
+| 청량 YELLOW | ![#FFEA7D](https://www.singlecolorimage.com/get/FFEA7D/15x15) `#FFEA7D` |
+| 청량 WHITE     | ![#FFFFFF](https://www.singlecolorimage.com/get/FFFFFF/15x15) `#FFFFFF` |
+| 청량 GRAY      | ![#D2D2D2](https://www.singlecolorimage.com/get/D2D2D2/15x15) `#D2D2D2` |
+
+| 텍스트 컬러     | 색상코드 |
+|------------|-----------|
+| DARKER      	 | ![#333333](https://singlecolorimage.com/get/333333/15x15)  `333333` |
+| DARK      	 | ![#666666](https://www.singlecolorimage.com/get/666666/15x15) `#666666` |
+| MEDIUM     | ![#888888](https://www.singlecolorimage.com/get/888888/15x15) `#888888` |
+| LIGHT      | ![#AAAAAA](https://www.singlecolorimage.com/get/AAAAAA/15x15) `#AAAAAA` |
+| RED      | ![#FF4A11](https://www.singlecolorimage.com/get/FF4A11/15x15) `#FF4A11` |
+
+
+
+## 프레젠테이션
+
+[**프레젠테이션 바로가기**](https://www.figma.com/design/hODaA3aqcUvTjZta1lzVWf/%5BKDT%5D-%ED%94%8C%EB%9E%AB%ED%8F%BC%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80?node-id=1470-4790&t=gQojZyYJhK3K5mFi-4)
