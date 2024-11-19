@@ -94,17 +94,17 @@ Bootstrap v5.3.3
 
 | Version | Preview |
 |---|---|
-| Default | ![Default](./src/asset/svg/BI_desktop_Default.svg) |  
-| Inverse | ![Inverse](./src/asset/svg/BI_desktop_Inverse.svg) |
+| Default | ![Default](./src/asset/svg/common/BI_desktop_Default.svg) |  
+| Inverse | ![Inverse](./src/asset/svg/common/BI_desktop_Inverse.svg) |
 
 ## 아이콘
 
 | Version | Preview |
 |---|---|
-| Default | ![Default](./src/asset/svg/BI_mobile_Default.svg) |  
-| Inverse | ![Inverse](./src/asset/svg/BI_mobile_Inverse.svg) |
-| Milkit_D | ![Default](./src/asset/svg/BI(mealkit)_mobile_Default.svg) |
-| Milkit_I | ![Inverse](./src/asset/svg/BI(mealkit)_mobile_Inverse.svg) |
+| Default | ![Default](./src/asset/svg/common/BI_mobile_Default.svg) |  
+| Inverse | ![Inverse](./src/asset/svg/common/BI_mobile_Inverse.svg) |
+| Milkit_D | ![Default](./src/asset/svg/common/BI(mealkit)_mobile_Default.svg) |
+| Milkit_I | ![Inverse](./src/asset/svg/common/BI(mealkit)_mobile_Inverse.svg) |
 
 
 ## 폰트
