@@ -241,7 +241,7 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: #fff;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-default, rgba(0, 0, 0, 0.15));
 
   @media (max-width: 991px) {
     height: 60px;
@@ -285,7 +285,7 @@ header {
         font-size: 20px;
         font-weight: 500;
         line-height: 65px;
-        color: #214aee;
+        color: var(--CL-blue, #214AEE);
         border: none;
         background-color: transparent;
       }
@@ -299,16 +299,16 @@ header {
         max-height: 0;
         z-index: 100;
         transition: 0.5s;
-        background-color: rgba(246, 246, 246, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 30px;
         backdrop-filter: blur(5px);
-        color: #333;
+        color: var(--text-default, #333);
 
         li {
           transition: 0.5s;
 
           &:first-child {
-            color: #214aee;
+            color: var(--CL-blue, #214AEE);
             flex-direction: column;
 
             &::before {
@@ -320,7 +320,7 @@ header {
           }
 
           &:nth-child(2) {
-            color: #214aee;
+            color: var(--CL-blue, #214AEE);
           }
 
           &:last-child {
@@ -365,13 +365,13 @@ header {
       flex-shrink: 0;
 
       .menu a {
-        color: #888;
+        color: var(--text-importance-2, #888);
         font-size: 20px;
         font-weight: 500;
         transition: 0.5s;
 
         &:hover {
-          color: #214aee;
+          color: var(--CL-blue, #214AEE);
         }
       }
     }
@@ -389,11 +389,33 @@ header {
     }
 
     .delivery:hover svg path {
-      stroke: #214aee;
+      stroke: var(--CL-blue, #214AEE);
       animation-name: boorung;
       animation-duration: 0.4s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
+    }
+  }
+}
+
+// Topad.js
+.top-ad {
+  width: 100%;
+  background-color: var(--CL-blue, #214AEE);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-alter, #FEFEFE);
+  @media (max-width: 991px) {
+    display: none;
+  }
+  p {
+    margin: 0;
+    font-weight: 300;
+    span {
+      color: var(--CL-yellow, #FFEA7D);
+      font-weight: 500;
     }
   }
 }
@@ -404,10 +426,10 @@ footer {
   min-height: 21.875rem;
   padding: 2.725rem 0;
   gap: 3.125rem;
-  display: flex; // Flexbox로 중앙 정렬
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #214aee;
+  background-color: var(--CL-blue, #214AEE);
   color: #fff;
 
   div {
