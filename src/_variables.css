@@ -1,0 +1,20 @@
+:root{
+  /* color */
+  --CL-blue: #214AEE;
+  --CL-yellow: #FFEA7D;
+  --point: #FF4A11;
+  --text-default: #333333;
+  --text-importance-1: #666666;
+  --text-importance-2: #888888;
+  --text-importance-3: #AAAAAA;
+  --bg-grey-1: #D2D2D2;
+  --bg-grey-2: #F4F4F4;
+  --bg-white: #FFFFFF;
+  --shadow-default: rgba(0, 0, 0, 0.15);
+  --white-alter: #FEFEFE;
+
+  /* border-radius */
+  --radius-full: 100px;
+  --radius-s: 5px;
+  --radius-m: 10px;
+}

@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 // Components
 import Cheonglyang from './Cheonglyang';
-// scss
+// style
+import './_variables.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss';
 
