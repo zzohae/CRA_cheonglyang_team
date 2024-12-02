@@ -397,3 +397,63 @@ header {
     }
   }
 }
+
+// Footer.js
+footer {
+  width: 100%;
+  min-height: 21.875rem;
+  padding: 2.725rem 0;
+  gap: 3.125rem;
+  display: flex; // Flexbox로 중앙 정렬
+  flex-direction: column;
+  justify-content: center;
+  background-color: #214aee;
+  color: #fff;
+
+  div {
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(3) {
+      h3 {
+        margin-bottom: 10px;
+      }
+      span {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    h1 {
+      order: 4;
+    }
+  }
+
+  a.linkIcon {
+    transition: 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .cslink:hover{
+      text-decoration: underline;
+  }
+}
+
+.logo-white {
+  fill: #fff !important;
+}
+
+.ftinfo {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ftinfo-bold {
+  font-weight: bold;
+}
