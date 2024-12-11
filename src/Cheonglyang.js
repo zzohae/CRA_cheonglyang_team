@@ -10,7 +10,7 @@ import Mainpage from './section/p01main/Mainpage';
 // 404
 import Notfound from './section/Notfound';
 
-export default function App() {
+export default function Cheonglyang() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [keyword, setKeyword] = useState('');
   const [incartNum, setIncartNum] = useState([]);

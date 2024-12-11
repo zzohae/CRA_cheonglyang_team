@@ -15,6 +15,29 @@ html {
   overflow-y: scroll !important;
 }
 
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #9EAEEE #f1f1f1;
+  }
+}
+
+// ScrollBar
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9EAEEE;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #214AEE;
+}
+
 body {
   padding-top: 202px;
   @media (max-width: 991px){
@@ -145,7 +168,7 @@ section {
     }
 
     .hdtop {
-      padding-right: calc((100vw - 1320px) / 2 + var(--bs-gutter-x)* .5);
+      padding-right: calc(50vw - 652px);
       width: 45%;
       height: 65px;
       margin-right: 0;
@@ -215,7 +238,7 @@ section {
     }
 
     .hdbtm {
-      padding-left: calc((100vw - 1320px) / 2 + var(--bs-gutter-x)* .5);
+      padding-left: calc(50vw - 652px);
       width: 50%;
       margin-left: 0;
 
