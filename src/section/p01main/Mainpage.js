@@ -9,7 +9,7 @@ import C4barban from './C4barban'
 import C5livecom from './C5livecom'
 import C6review from './C6review'
 // style
-import './Mainpage.scss'
+import './mainpage.scss'
 
 export default function Mainpage({ incartNum, setIncartNum }) {
   return (
