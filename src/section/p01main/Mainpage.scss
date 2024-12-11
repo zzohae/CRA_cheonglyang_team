@@ -77,3 +77,103 @@
     }
   }
 }
+
+.mdspickCont {
+  align-self: flex-start;
+  width: 100%;
+
+  .mdsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    gap: 20px;
+    padding: 0;
+    padding-right: 84px;
+    background-color: var(--bg-white, #FFF);
+    z-index: 100;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+      background-color: var(--bg-white, #FFF);
+    }
+    .maintitle:after{
+        content: '';
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin-left: 5px;
+        transform: translateY(4px);
+        background: url(../../../public/asset/img/maintitle/thumsup.png);
+      }
+  }
+
+  .tagwrap {
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: nowrap;
+  }
+  .tagitem {
+    color: var(--text-importance-1, #666);
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    border-radius: 0.3125rem;
+  }
+  .swiper-slide-next {
+    opacity: .5;
+    filter: blur(3px);
+  }
+  .swiper-initialized {
+    overflow: visible;
+    @media (max-width: 991px){
+      margin-top: 50px;
+    }
+  }
+  button {
+    background: none;
+    border: none;
+  }
+  span {
+    margin: 0 1rem;
+  }
+  .mdswiper{
+    width: 615px;
+    position: relative;
+    @media (max-width: 991px) {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        background-color: var(--bg-white, #FFF);
+      }
+    }
+    @media (max-width: 575px) {
+      width: 80vw;
+      margin-left: -0.75rem;
+      .swiper-slide img {
+        border-radius: 0 0.3125rem 0.3125rem 0;
+        width: 100%;
+      }
+    }
+  }
+}
