@@ -45,7 +45,7 @@ export default function Footer() {
               </div>
 
               <div className='col-6 col-md-4 col-lg-2 mb-4'>
-                <h3 className='fs-h3'>고객 지원</h3> 
+                <h4 className='fs-h4'>고객 지원</h4> 
                   <ul>
                     {ftData.support.map((v, i) => (
                       <li key={i} className='fs-h6'>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <a className='linkIcon' href="##"><Insta /></a>
               </div>
 
-              <Btn version='v3' className='sitemap'>사이트맵</Btn>
+              <Btn version='v3' className='sitemap ms-auto'>사이트맵</Btn>
             </div>
 
         </div>

@@ -66,27 +66,27 @@ section {
 
 // 공통 커스텀 클래스
 .fs-h1 {
-  font-size: clamp(var(--font-size-14), 5vw, var(--font-size-34));
+  font-size: clamp(var(--font-size-24), 5vw, var(--font-size-34));
   font-weight: bold;
 }
 .fs-h2 {
-  font-size: clamp(var(--font-size-14), 4.5vw, var(--font-size-26));
+  font-size: clamp(var(--font-size-20), 4.5vw, var(--font-size-26));
   font-weight: bold;
 }
 .fs-h3 {
-  font-size: clamp(var(--font-size-14), 4vw, var(--font-size-24));
+  font-size: clamp(var(--font-size-18), 4vw, var(--font-size-22));
   font-weight: bold;
 }
 .fs-h4 {
-  font-size: clamp(var(--font-size-14), 3.5vw, var(--font-size-22));
+  font-size: clamp(var(--font-size-16), 3.5vw, var(--font-size-18));
   font-weight: 500;
 }
 .fs-h5 {
-  font-size: clamp(var(--font-size-14), 3vw, var(--font-size-20));
+  font-size: clamp(var(--font-size-14), 3vw, var(--font-size-16));
   font-weight: 500;
 }
 .fs-h6 {
-  font-size: clamp(var(--font-size-14), 2.5vw, var(--font-size-18));
+  font-size: clamp(var(--font-size-12), 2.5vw, var(--font-size-14));
   font-weight: 500;
 }
 
