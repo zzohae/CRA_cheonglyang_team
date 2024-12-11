@@ -13,6 +13,7 @@ import { ReactComponent as Logomin } from '../asset/svg/common/logo_min.svg';
 import { ReactComponent as Delivericon } from '../asset/svg/truck.svg'
 import { ReactComponent as Menuline } from '../asset/svg/common/menu_line.svg'
 import { ReactComponent as Menumbline } from '../asset/svg/common/menu_mobile.svg'
+import { ReactComponent as Searchicon } from '../asset/svg/common/searchicon.svg'
 // Components
 import Searchbox from '../component/Searchbox';
 import Topad from './Topad';
@@ -29,14 +30,20 @@ export default function Header({ keyword, setKeyword, incartNum, isLoggedIn, set
     <header className='d-flex align-items-center justify-content-center'>
       <Topad></Topad>
       <div className="hdtop container d-flex justify-content-between align-items-center">
-        <h1 className='order-1 order-lg-0'><Link to="/" className='d-flex justify-content-center align-items-center'><Logo width='120' height='60'></Logo><Logomin className='d-block d-lg-none'/></Link></h1>
+        <h1 className='order-1 order-lg-0'><Link to="/" className='d-flex justify-content-center align-items-center'><Logo width='120' height='60'  className='d-none d-lg-block'></Logo><Logomin className='d-block d-lg-none'/></Link></h1>
         <Searchbox className='order-0 order-lg-1' keyword={keyword} setKeyword={setKeyword}></Searchbox>
         <Util className='order-2 util d-none d-lg-flex align-items-center justify-content-end' incartNum={incartNum} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Util>
-        <Menumbline
-            width="28"
-            height="28"
-            className="mobileallmenu d-block d-lg-none order-3"
-            onClick={toggleMenu} />
+        <div className='d-flex d-lg-none order-2 gap-2'>
+          <Searchicon 
+            width='30' 
+            height='30' />
+          <Menumbline
+              width="28"
+              height="28"
+              cursor="pointer" 
+              className="mobileallmenu d-block d-lg-none order-3"
+              onClick={toggleMenu} />
+          </div>
       </div>
       <div className="hdbtm container">
         <nav className="gnb d-none d-lg-flex justify-content-between align-items-center">
