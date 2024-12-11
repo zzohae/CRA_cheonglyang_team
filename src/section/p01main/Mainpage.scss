@@ -295,3 +295,73 @@
     }
   }
 }
+
+.reviewSliderCont {
+
+  .maintitle:after {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-left: 4px;
+    transform: translateY(4px);
+    background: url(../../../public/asset/img/maintitle/sparkle.png);
+  }
+
+  .mainreviewwrap {
+    .swiper-slide {
+      height: auto;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: max-content;
+      .prodimg {
+        aspect-ratio: 1;
+      }
+      .rating {
+        gap: 7px;
+        span {
+          line-height: 1;
+          color: #FF4A11;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: -2px;
+        }
+      }
+      .reviewWrap {
+        height: 170px;
+        gap: 10px;
+        .minireview {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          width: 100%;
+          img {
+            border-radius: 0.3125rem;
+            width: 80px;
+            height: 80px;
+          }
+          p {
+            width: 100%;
+            text-align: justify;
+            word-break: break-all;
+            color: #666;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 1.2;
+            max-height: calc(1.2em * 3);
+            
+            box-orient: vertical;
+            line-clamp: 3;
+          }
+        }
+      }
+    }
+  }
+}
