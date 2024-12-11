@@ -2,7 +2,7 @@
 import React from 'react'
 // data
 import allData from '../../db/allData.json'
-// Component
+// Components
 import SwiperBanner from '../../component/SwiperBanner'
 
 export default function C1visual() {

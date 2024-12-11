@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react'
 //data
 import allData from '../../db/allData.json'
-// Component
+// Components
 import MainTitle from '../../ui/MainTitle'
 import SwiperBanner from '../../component/SwiperBanner'
 
