@@ -226,3 +226,44 @@
     height: 100%;
   }
 }
+
+.barbanCont {
+  height: 400px;
+  background-color: #FFFADE;
+  @media (max-width: 575px){
+    height: 300px;
+  }
+  .barbanSubCont {
+    position: relative;
+    height: 100%;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: 576px) and (max-width: 899px){
+      transform: translateX(-46%);
+    }
+  }
+  .maptext {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 10;
+    h6 {
+      color: #666;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    p {
+      color: #888;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 135%;
+    }
+  }
+}
