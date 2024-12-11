@@ -31,7 +31,7 @@ export default function App() {
     <div className={`wrap ${scrollPosition < 200 ? "" : "scrolled"}`}>
       <Header keyword={keyword} setKeyword={setKeyword} incartNum={incartNum}></Header>
       <Routes>
-        <Route path='/' element={<Mainpage></Mainpage>}></Route>
+        <Route path='/' element={<Mainpage incartNum={incartNum} setIncartNum={setIncartNum}></Mainpage>}></Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
