@@ -59,16 +59,20 @@
           {
             "linkto": "offline_event",
             "title": "지역 행사"
+          },
+          {
+            "linkto": "cardnews",
+            "title": "카드뉴스"
           }
         ]
       },
       {
-        "linkto" : "aboutus",
+        "linkto" : "aboutus/aboutinfo",
         "title" : "청량리종합시장",
         "submenu": [
           {
-            "linkto": "",
-            "title": "시장 소개"
+            "linkto": "aboutinfo",
+            "title": "청량리종합시장"
           },
           {
             "linkto": "store_info",
@@ -99,8 +103,8 @@
   },
   "mainRWDbanner" : {
     "bannerData" : [
-      { "src" : "main_banner_01_lg.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_02_lg.jpg", "alt" : "카카오톡 선물하기" },
+      { "src" : "main_banner_01_lg.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_03_lg.jpg", "alt" : "캠핑 푸드 빅 세일" },
       { "src" : "main_banner_04_lg.jpg", "alt" : "라이브커머스 초특가" },
       { "src" : "main_banner_05_lg.jpg", "alt" : "밀키트 주간 구독" },
@@ -108,8 +112,8 @@
       { "src" : "main_banner_07_lg.jpg", "alt" : "SNS 레시피 이벤트" }
     ],
     "bannerDataMd" : [
-      { "src" : "main_banner_01_md.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_02_md.jpg", "alt" : "카카오톡 선물하기" },
+      { "src" : "main_banner_01_md.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_03_md.jpg", "alt" : "캠핑 푸드 빅 세일" },
       { "src" : "main_banner_04_md.jpg", "alt" : "라이브커머스 초특가" },
       { "src" : "main_banner_05_md.jpg", "alt" : "밀키트 주간 구독" },
@@ -117,8 +121,8 @@
       { "src" : "main_banner_07_md.jpg", "alt" : "SNS 레시피 이벤트" }
     ],
     "bannerDataSm" : [
-      { "src" : "main_banner_01_sm.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_02_sm.jpg", "alt" : "카카오톡 선물하기" },
+      { "src" : "main_banner_01_sm.jpg", "alt" : "베스트 리뷰 이벤트" },
       { "src" : "main_banner_03_sm.jpg", "alt" : "캠핑 푸드 빅 세일" },
       { "src" : "main_banner_04_sm.jpg", "alt" : "라이브커머스 초특가" },
       { "src" : "main_banner_05_sm.jpg", "alt" : "밀키트 주간 구독" },
@@ -126,22 +130,42 @@
       { "src" : "main_banner_07_sm.jpg", "alt" : "SNS 레시피 이벤트" }
     ]
   },
+  "mdpbanner" : {
+    "bannerData": [
+      { "src" : "mdp_banner_01.jpg", "alt" : "찐빵" },
+      { "src" : "mdp_banner_02.jpg", "alt" : "야끼만두" },
+      { "src" : "mdp_banner_03.jpg", "alt" : "가래떡" },
+      { "src" : "mdp_banner_04.jpg", "alt" : "육개장" },
+      { "src" : "mdp_banner_01.jpg", "alt" : "찐빵" },
+      { "src" : "mdp_banner_02.jpg", "alt" : "야끼만두" },
+      { "src" : "mdp_banner_03.jpg", "alt" : "가래떡" },
+      { "src" : "mdp_banner_04.jpg", "alt" : "육개장" },
+      { "src" : "mdp_banner_01.jpg", "alt" : "찐빵" },
+      { "src" : "mdp_banner_02.jpg", "alt" : "야끼만두" },
+      { "src" : "mdp_banner_03.jpg", "alt" : "가래떡" },
+      { "src" : "mdp_banner_04.jpg", "alt" : "육개장" }
+    ]
+  },
   "mainPagetitle" : [
     {
       "linkto": "",
-      "title": "MD's Pick!"
+      "title": "이번 달 청량 추천!",
+      "emoji":"thumsup"
     },
     {
       "linkto": "",
-      "title": "지금 많이 찾는 BEST"
+      "title": "지금 가장 인기있는 상품",
+      "emoji":"cart"
     },
     {
       "linkto": "",
-      "title": "Live Commerce"
+      "title": "실시간 쇼핑! 라이브커머스",
+      "emoji":"movie"
     },
     {
       "linkto": "",
-      "title": "구매자분들의 솔직 리뷰✨"
+      "title": "솔직한 리뷰, 믿을 수 있는 상품",
+      "emoji":"sparkle"
     }
   ],
     "companyInfo": [
