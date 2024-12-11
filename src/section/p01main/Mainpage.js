@@ -11,7 +11,7 @@ import C6review from './C6review'
 // style
 import './Mainpage.scss'
 
-export default function Mainpage({ bgcolor, textcolor, incartNum, setIncartNum }) {
+export default function Mainpage({ incartNum, setIncartNum }) {
   return (
     <div>
       <C1visual></C1visual>
