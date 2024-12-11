@@ -177,3 +177,52 @@
     }
   }
 }
+
+.bestCont {
+  .maintitle:after{
+    content: '';
+    display: inline-block;
+    width: clamp(1.5rem, 5vw, 2.125rem); 
+    height: clamp(1.5rem, 5vw, 2.125rem);
+    margin-left: 5px;
+    transform: translateY(4px);
+    background: url(../../../public/asset/img/maintitle/cart.png);
+  }
+}
+
+.bestproduct {
+  gap: 12px;
+  &>a {
+    width: 100%;
+    @media (max-width: 767px) {
+      width: 50%;
+      min-width: 172px;
+    }
+  }
+  &>div {
+    width: 100%;
+    @media (max-width: 767px) {
+      width: 48%;
+    }
+    .mobilecart {
+      gap: 10px;
+    }
+  }
+  .prodimg {
+    margin: 0;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  .ratingNum {
+    order: unset;
+    line-height: 1;
+    color: #FF4A11;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: -2px;
+  }
+  .prodInfo {
+    height: 100%;
+  }
+}
