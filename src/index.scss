@@ -447,6 +447,29 @@ header {
   }
 }
 
+// Searchbox.js
+.search-box {
+  background-color: transparent;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  width: 400px;
+  height: 40px;
+  padding: 2px 15px;
+  border-radius: 30px;
+  border: 2px solid var(--CL-blue, #214AEE);
+
+  input {
+    font-size: 16px;
+    color: var(--text-default, #333);
+  }
+
+  input::placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+  }
+}
+
 // Footer.js
 footer {
   width: 100%;
