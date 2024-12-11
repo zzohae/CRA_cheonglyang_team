@@ -11,7 +11,7 @@ export default function Notfound() {
       <div className='container d-flex flex-column align-items-center'>
         <div className='col-12 text-center mb-5 notyet'>
           <h2>이 페이지는 오픈 준비 중입니다.</h2>
-          <img src={process.env.PUBLIC_URL ? process.env.PUBLIC_URL + '/assets/img/404/notfound.png' : '/assets/img/404/notfound.png'} alt='서비스 준비 중' />
+          <img src={process.env.PUBLIC_URL ? process.env.PUBLIC_URL + '/asset/img/404/notfound.png' : '/asset/img/404/notfound.png'} alt='서비스 준비 중' />
         </div>
         <div className='more-proj col-9 mb-5'>
           <Title h2size='var(--font-size-26, 1.625rem)'>청량마켓몰 더 둘러보기</Title>
