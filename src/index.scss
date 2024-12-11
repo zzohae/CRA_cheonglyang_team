@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  color: var(--text-default, #333);
   padding-top: 202px;
   @media (max-width: 991px){
     padding-top: 97px;
@@ -66,6 +67,9 @@ dl, dt, dd {
 a {
   text-decoration: none;
   color: unset;
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 svg {
@@ -133,6 +137,26 @@ section {
 
 .border-none {
   border: none !important;
+}
+
+// Topad.js
+.top-ad {
+  width: 100%;
+  background-color: var(--CL-blue, #214AEE);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-alter, #FEFEFE);
+  font-size: var(--font-size-18, 1.125rem);
+  p {
+    margin: 0;
+    font-weight: 300;
+    span {
+      color: var(--CL-yellow, #FFEA7D);
+      font-weight: 500;
+    }
+  }
 }
 
 // Header.js
@@ -450,26 +474,6 @@ header {
   }
 }
 
-// Topad.js
-.top-ad {
-  width: 100%;
-  background-color: var(--CL-blue, #214AEE);
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white-alter, #FEFEFE);
-  font-size: var(--font-size-18, 1.125rem);
-  p {
-    margin: 0;
-    font-weight: 300;
-    span {
-      color: var(--CL-yellow, #FFEA7D);
-      font-weight: 500;
-    }
-  }
-}
-
 // Searchbox.js
 .search-box {
   background-color: transparent;
@@ -662,5 +666,44 @@ footer {
   }
   &.detail {
     font-size: 26px;
+  }
+}
+
+// mytab 탭
+.mytab {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--CL-blue, #214AEE);
+  gap: 10px;
+  li {
+    border-radius: 30px;
+    min-width: 85px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 1.25rem;
+    color: var(--text-importance-2, #888);
+    background-color: var(--bg-gray-2, #F0F0F0);
+    font-weight: 500;
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      line-height: normal;
+      text-align: center;
+      color: inherit;
+    }
+    &.active {
+      background-color: var(--CL-blue, #214AEE);
+      border-color: var(--CL-blue, #214AEE);
+      color: var(--bg-white, #fff);
+      a {
+        color: var(--bg-white, #fff);
+      }
+    }
   }
 }
