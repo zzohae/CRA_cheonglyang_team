@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 // modules
 import { Routes, Route } from "react-router-dom";
 // Components-common
-import Topad from './layout/Topad';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 // Components-unique
@@ -30,7 +29,6 @@ export default function App() {
 
   return (
     <div className={`wrap ${scrollPosition < 200 ? "" : "scrolled"}`}>
-      <Topad></Topad>
       <Header keyword={keyword} setKeyword={setKeyword} incartNum={incartNum}></Header>
       <Routes>
         <Route path='/' element={<Mainpage></Mainpage>}></Route>

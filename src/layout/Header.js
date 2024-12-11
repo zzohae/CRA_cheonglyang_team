@@ -15,7 +15,7 @@ import { ReactComponent as Menuline } from '../asset/svg/common/menu_line.svg'
 import { ReactComponent as Menumbline } from '../asset/svg/common/menu_mobile.svg'
 // Components
 import Searchbox from '../component/Searchbox';
-import Topad from '../contents/Topad';
+import Topad from './Topad';
 import Mbtab from './Mbtab'
 
 export default function Header({ keyword, setKeyword, incartNum, isLoggedIn, setIsLoggedIn }) {
@@ -29,7 +29,7 @@ export default function Header({ keyword, setKeyword, incartNum, isLoggedIn, set
     <header className='d-flex align-items-center justify-content-center'>
       <Topad></Topad>
       <div className="hdtop container d-flex justify-content-between align-items-center">
-        <h1 className='order-1 order-lg-0'><a href="/" className='d-flex justify-content-center align-items-center'><Logo width='120' height='60'></Logo></a></h1>
+        <h1 className='order-1 order-lg-0'><Link to="/" className='d-flex justify-content-center align-items-center'><Logo width='120' height='60'></Logo><Logomin className='d-block d-lg-none'/></Link></h1>
         <Searchbox className='order-0 order-lg-1' keyword={keyword} setKeyword={setKeyword}></Searchbox>
         <Util className='order-2 util d-none d-lg-flex align-items-center justify-content-end' incartNum={incartNum} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Util>
         <Menumbline

@@ -115,6 +115,10 @@ section {
 // Header.js
 // scrolled
 .scrolled {
+  .top-ad {
+    display: none;
+    height: 0;
+  }
   header {
     min-height: 65px;
     flex-direction: row-reverse;
@@ -278,6 +282,13 @@ header {
     svg {
       height: 40px;
     }
+
+    @media (max-width: 575px){
+      height: 60px;
+      .top-ad {
+        display: none;
+      }
+    }
   }
 
   .hdtop {
@@ -425,6 +436,7 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--white-alter, #FEFEFE);
+  font-size: var(--font-size-18, 1.125rem);
   p {
     margin: 0;
     font-weight: 300;
