@@ -1,12 +1,16 @@
+// react
 import React, { useState, useEffect } from "react";
+// UIs
 import { YellowTag } from "../../component/commonUI";
-import InfoHistory from './C2infohistory';
+// Components
 import MainTitle from '../../ui/MainTitle'
+// Contents
+import InfoHistory from './C2infohistory';
 
 
 export default function C1aboutinfo() {
   const images = [
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg", // 큰 이미지
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg",
     "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg",
     "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual00.jpg",
     "https://cheongnyangnijeontongmarket.com/theme/basic/img/sub/sub_visual01.jpg",

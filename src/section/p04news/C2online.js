@@ -1,5 +1,8 @@
+// react
 import React, { useState, useEffect } from 'react';
+// data
 import { supabase2 } from '../../api/dbConnect';
+// Components
 import EventCard from '../../component/EventCard';
 import MyPagination from '../../component/MyPagination';
 
@@ -52,7 +55,7 @@ export default function C2online() {
             const formattedEndDate = new Date(event.end_date).toLocaleDateString();
             const formattedPeriod = `${formattedStartDate} ~ ${formattedEndDate}`;
 
-            const expired = isEventExpired(event.end_date); // 종료 여부 계산
+            const expired = isEventExpired(event.end_date);
 
             return (
               <EventCard
@@ -60,7 +63,7 @@ export default function C2online() {
                 imgSrc={`/asset/img/event/event_card_${event.img_number}.jpg`}
                 title={event.title}
                 period={formattedPeriod}
-                isExpired={expired} // 종료 여부를 카드에 전달
+                isExpired={expired}
               />
             );
           })}

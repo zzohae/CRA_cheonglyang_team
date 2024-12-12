@@ -1,6 +1,9 @@
+// react
 import React, { useState, useEffect } from 'react';
-import EventCard from '../../component/EventCard';
+// data
 import { supabase2 } from '../../api/dbConnect';
+// Components
+import EventCard from '../../component/EventCard';
 import MyPagination from '../../component/MyPagination';
 
 export default function C4cardnews() {

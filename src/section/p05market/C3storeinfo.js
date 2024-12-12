@@ -1,9 +1,13 @@
+// react
 import React, { useState, useRef, useEffect } from "react";
-import MainTitle from '../../ui/MainTitle'
-import Searchbox from '../../component/Searchbox';
-import storeDB from '../../db/storeData.json';
-import Storelist from './C4storelist';
+// data
 import MapsAPI from "../../api/Mapsapi";
+import storeDB from '../../db/storeData.json';
+// Components
+import Searchbox from '../../component/Searchbox';
+import MainTitle from '../../ui/MainTitle'
+// Contents
+import Storelist from './C4storelist';
 
 export default function StoreInfo() {
   const [searchKeyword, setSearchKeyword] = useState("");

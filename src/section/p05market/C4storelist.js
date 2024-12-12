@@ -1,5 +1,8 @@
+// react
 import React from 'react';
+// UIs
 import { StoreTag } from '../../component/commonUI';
+// svg
 import { ReactComponent as Callnum } from '../../asset/svg/graphic/phone.svg';
 
 export default function Storelist({ stores, onStoreClick, storeRefs  }) {

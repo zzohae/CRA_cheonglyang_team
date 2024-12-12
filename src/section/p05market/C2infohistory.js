@@ -1,6 +1,9 @@
+// react
 import React, { useEffect } from "react";
-import styles from './infoHistory.module.scss';
+// svg
 import { ReactComponent as Circle } from '../../asset/svg/graphic/infoHistory-circle.svg';
+// style
+import styles from './infoHistory.module.scss';
 
 
 const C2infohistory = () => {
