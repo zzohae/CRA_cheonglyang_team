@@ -10,6 +10,7 @@ import Mainpage from './section/p01main/Mainpage';
 import Allproducts from './section/p02product/Allproducts';
 import News from './section/p04news/News';
 import Ecoupon from './section/p07ecoupon/Ecoupon'
+import Marketinfo from './section/p05market/Marketinfo'
 // 404
 import Notfound from './section/Notfound';
 
@@ -39,6 +40,7 @@ export default function Cheonglyang() {
         <Route path="/search" element={<Allproducts keyword={keyword} setKeyword={setKeyword} incartNum={incartNum} setIncartNum={setIncartNum}></Allproducts>} />
         <Route path="/news/:en" element={<News en=''></News>} />
         <Route path="/ecoupon" element={<Ecoupon></Ecoupon>} />
+        <Route path="/aboutus/:en" element={<Marketinfo></Marketinfo>} />
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>

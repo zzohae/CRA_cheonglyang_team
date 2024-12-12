@@ -10,7 +10,7 @@ import { Btn } from '../component/commonUI';
 // svg
 import { ReactComponent as Logo } from '../asset/svg/common/BI_desktop_Default.svg';
 import { ReactComponent as Logomin } from '../asset/svg/common/logo_min.svg';
-import { ReactComponent as Delivericon } from '../asset/svg/truck.svg'
+import { ReactComponent as Delivericon } from '../asset/svg/graphic/truck.svg'
 import { ReactComponent as Menuline } from '../asset/svg/common/menu_line.svg'
 import { ReactComponent as Menumbline } from '../asset/svg/common/menu_mobile.svg'
 import { ReactComponent as Searchicon } from '../asset/svg/common/searchicon.svg'
