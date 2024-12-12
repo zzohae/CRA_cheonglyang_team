@@ -84,7 +84,7 @@ svg {
 }
 
 .mycontainer {
-  padding: 50px 0 0;
+  padding-top: 50px;
 }
 
 section {
@@ -601,7 +601,6 @@ footer {
 }
 
 // Product.js
-
 .prodimg {
   width: 100%;
   aspect-ratio: 1;
@@ -682,11 +681,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     padding: 0 1.25rem;
-    color: var(--text-importance-2, #888);
     background-color: var(--bg-gray-2, #F0F0F0);
-    font-weight: 500;
     a {
       display: flex;
       width: 100%;
@@ -695,7 +691,9 @@ footer {
       justify-content: center;
       line-height: normal;
       text-align: center;
-      color: inherit;
+      color: var(--text-importance-2, #888);
+      font-weight: 500;
+      font-size: var(--font-size-18);
     }
     &.active {
       background-color: var(--CL-blue, #214AEE);
@@ -704,6 +702,34 @@ footer {
       a {
         color: var(--bg-white, #fff);
       }
+    }
+  }
+}
+
+// MyPagination.js
+.myPagination {
+  margin-top: 50px;
+  button {
+    display: flex;
+    height: 40px;
+    padding: 0 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: none;
+    color: var(--CL-blue, #214AEE);
+    font-size: 18px;
+    font-weight: 400;
+    background: none;
+    &.active {
+      background-color: var(--CL-blue, #214AEE);
+      color: var(--bg-white, #FFF);
+      font-weight: 700;
+    }
+    &:disabled {
+      background: none;
+      opacity: .5;
     }
   }
 }
