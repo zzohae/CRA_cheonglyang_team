@@ -1,5 +1,10 @@
 // modules
 import styled from 'styled-components';
+// svg
+import RadioSelectIcon from '../asset/svg/common/radioSelect.svg';
+import RadioIcon from '../asset/svg/common/radio.svg';
+import BottomArrow from '../asset/svg/common/bottom_arrow.svg';
+import CheckIcon from '../asset/svg/common/check_active.svg';
 
 export const Btn = styled.button.withConfig({
   shouldForwardProp: (prop) => !['version', 'page'].includes(prop),
@@ -53,6 +58,20 @@ export const Btn = styled.button.withConfig({
       border-color: #214AEE;
     }
   `}
+
+      ${(props) => props.version === 'v4' && `
+    background-color: #fff;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #214AEE;
+    border-radius: ${props.borderRadius === false ? '0.3125rem' : '100px'};
+  `}
+    ${(props) => props.version === 'v5' && `
+      background-color: #214AEE;
+      color: #fff;
+      border: 1px solid #214AEE;
+      border-radius: ${props.borderRadius === false ? '0.3125rem' : '100px'};
+    `}
 
   ${(props) => props.disabled && `
     background-color: #aaa;
@@ -172,4 +191,139 @@ export const YellowTag = styled.span`
     color: #333;
     border-radius: 3px;
     white-space: nowrap;
+`;
+
+
+export const RadioTab = styled.label`
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid transparent;  
+  word-break: keep-all;
+  white-space: nowrap;
+  padding: 0 20px;
+  height: 40px;
+  cursor: pointer;
+  background: ${({ checked }) => (checked ? '#214AEE' : '#f0f0f0')};
+  color: ${({ checked }) => (checked ? '#fff' : '#666')};
+  
+  input {
+    display: none;
+  }
+`;
+
+export const RadioCustom = styled.label`
+  font-family: 'Pretendard', sans-serif;
+  color: #666;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: ${({ checked }) =>
+      checked
+        ? `url(${RadioSelectIcon}) no-repeat center/contain`
+        : `url(${RadioIcon}) no-repeat center/contain`};
+  }
+
+  input {
+    display: none;
+  }
+`;
+
+
+
+export const InputText = styled.input`
+  width: ${({ fullWidth = true }) => (fullWidth ? '100%' : 'auto')};
+  // height: 3.75rem;
+  padding: 0.9375rem;
+  font-size: 1rem;
+  border: 1px solid ${({ hasError }) => (hasError ? '#ff4d4f' : '#ccc')};
+  border-radius: 0.3125rem;
+  outline: none;
+
+  &:focus {
+    border-color: ${({ hasError }) => (hasError ? '#FF4A11' : '#214AEE')}!important; ${({ hasError }) => (hasError ? '#ff4d4f' : '#214AEE')};
+    &::placeholder {
+      color: #888;
+    }
+  }
+
+  &::placeholder {
+    color: #aaa;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+  }
+`;
+
+
+export const SelectCustom = styled.select`
+  width: ${({ fullWidth = true }) => (fullWidth ? '100%' : 'auto')};
+  padding: 0.9375rem;
+  font-size: 1rem;
+  border: 1px solid ${({ hasError }) => (hasError ? '#ff4d4f' : '#ccc')};
+  border-radius: 0.3125rem;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url(${BottomArrow});
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.9375rem;
+`;
+
+
+export const WarningText = styled.p`
+  font-size: 0.875rem;
+  color: #ff4d4f;
+  margin: 5px 0 0;
+`;
+
+
+
+export const CheckboxCustom = styled.label`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Pretendard', sans-serif;
+  line-height: normal;
+  color: ${({ color }) => color || '#333'};
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 1.25rem;
+    border: 1px solid #214AEE;
+    border-radius: 0.3125rem;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  input[type='checkbox']:checked + &::before {
+    background-image: url(${CheckIcon});
+  }
+
+  span {
+    color: #aaa;
+  }
 `;

@@ -1,0 +1,84 @@
+.signupform {
+  form {
+    gap: 10px;
+    padding-bottom: 150px;
+
+    .fs-h4 {
+      color: #666;
+      font-weight: bold;
+    }
+
+    .fs-h5 {
+      color: #666;
+      font-weight: 400;
+    }
+
+    button {
+      height: 3.75rem;
+
+      &:last-child {
+        width: 18.3125rem;
+      }
+    }
+  }
+
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .InputArea {
+      flex-grow: 1;
+      max-width: 450px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+
+    input {
+      border: 1px solid #d2d2d2;
+      border-radius: 0.3125rem;
+    }
+
+    select {
+      color: #aaa;
+    }
+
+    .star {
+      font-family: "Inter";
+    }
+
+    .agree {
+      gap: unset;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    .titleLabel {
+      width: 100%;
+
+      br {
+        display: none !important;
+      }
+    }
+
+    .InputArea {
+      width: 100%;
+      max-width: none !important;
+    }
+  }
+}

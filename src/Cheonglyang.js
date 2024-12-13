@@ -11,6 +11,9 @@ import Allproducts from './section/p02product/Allproducts';
 import News from './section/p04news/News';
 import Ecoupon from './section/p07ecoupon/Ecoupon'
 import Marketinfo from './section/p05market/Marketinfo'
+import Login from './section/p08login/Login';
+import Signup from './section/p08login/Signup';
+// import Login from './'
 // 404
 import Notfound from './section/Notfound';
 
@@ -18,6 +21,7 @@ export default function Cheonglyang() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [keyword, setKeyword] = useState('');
   const [incartNum, setIncartNum] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const updateScroll = () => {
@@ -41,6 +45,9 @@ export default function Cheonglyang() {
         <Route path="/news/:en" element={<News en=''></News>} />
         <Route path="/ecoupon" element={<Ecoupon></Ecoupon>} />
         <Route path="/aboutus/:en" element={<Marketinfo></Marketinfo>} />
+        <Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Login>} />
+        <Route path="/signup" element={<Signup></Signup>} />
+
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
