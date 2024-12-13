@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { YellowTag } from "../../component/commonUI";
 import InfoHistory from './C2infohistory';
-import MainTitle from '../../ui/MainTitle'
-
+import MainTitle from '../../ui/MainTitle';
+import imgdata from '../../db/infoHistoryData.json';
 
 export default function C1aboutinfo() {
-  const images = [
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg", // 큰 이미지
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg",
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual00.jpg",
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/sub/sub_visual01.jpg",
-    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual02.jpg",
-    "https://cheongnyangnijeontongmarket.com/data/file/gallery/thumb-3551375640_8mKP6WLz_9a9c80258c260365f47f931a300ef2562cf1fef0_835x470.jpg",
-  ];
+  const images = imgdata.images; // JSON 데이터에서 images 가져오기
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
@@ -43,8 +36,7 @@ export default function C1aboutinfo() {
                     height: "100%",
                     objectFit: "cover",
                     borderRadius: "8px"
-                  }}
-                />
+                  }}/>
             </div>
 
               <div className="col-12 col-xl-5 mt-md-3 mt-lg-0 d-flex justify-content-between"

@@ -1,0 +1,44 @@
+{
+  "infoHistoryData": [
+    {
+      "year": "1910",
+      "description": "청량리일대시장의 전신,<br />역전시장 개설"
+    },
+    {
+      "year": "1948",
+      "description": "청량리종합시장 개설"
+    },
+    {
+      "year": "1949",
+      "description": "청량리농수산물시장 개설"
+    },
+    {
+      "year": "1958",
+      "description": "청량리청과물시장 개설"
+    },
+    {
+      "year": "1960",
+      "description": "경동시장,<br />경동광성상가 개설"
+    },
+    {
+      "year": "1964",
+      "description": "청량리전통시장 개설"
+    },
+    {
+      "year": "1970",
+      "description": "청량리도매시장,<br />동서시장 개설"
+    },
+    {
+      "year": "2024",
+      "description": "청량마켓몰<br />리뉴얼"
+    }
+  ],
+  "images": [
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg",
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual01.jpg",
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual00.jpg",
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/sub/sub_visual01.jpg",
+    "https://cheongnyangnijeontongmarket.com/theme/basic/img/main/subvisual02.jpg",
+    "https://cheongnyangnijeontongmarket.com/data/file/gallery/thumb-3551375640_8mKP6WLz_9a9c80258c260365f47f931a300ef2562cf1fef0_835x470.jpg"
+  ]
+}
