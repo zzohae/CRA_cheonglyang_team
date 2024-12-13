@@ -1,7 +1,11 @@
+// react
 import React, { useEffect } from "react";
-import styles from './infoHistory.module.scss';
-import { ReactComponent as Circle } from '../../asset/svg/graphic/infoHistory-circle.svg';
+// data
 import historydata from '../../db/infoHistoryData.json';
+// svg
+import { ReactComponent as Circle } from '../../asset/svg/graphic/infoHistory-circle.svg';
+// style
+import styles from './infoHistory.module.scss';
 
 const { infoHistoryData } = historydata;
 

@@ -1,7 +1,10 @@
+// react
 import React, { useEffect, useState } from 'react';
+// modules
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// style
+import 'swiper/swiper-bundle.css';
 
 export default function SwiperBanner({ datakey, viewslides, pagination, currentIndex, onSlideChange, swiperRef, spacebtw = 0, hasrwd = false, disableAutoplay = false }) {
   const { bannerData, bannerDataMd, bannerDataSm } = datakey;

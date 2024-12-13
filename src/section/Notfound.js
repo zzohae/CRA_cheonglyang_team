@@ -18,13 +18,13 @@ export default function Notfound() {
           <div className='linkwrap d-flex flex-column flex-lg-row mt30'>
             <Link
             to='products'
-            style={{backgroundImage: 'url(/assets/img/404/404ban1.jpg', backgroundColor: '#FBE4F2'}}
+            style={{backgroundImage: 'url(/asset/img/404/404ban1.jpg', backgroundColor: '#FBE4F2'}}
             className='col-12 col-lg-6'>
               신규상품
             </Link>
             <Link
             to=''
-            style={{backgroundImage: 'url(/assets/img/404/404ban2.jpg', backgroundColor: '#C7D1FA'}}
+            style={{backgroundImage: 'url(/asset/img/404/404ban2.jpg', backgroundColor: '#C7D1FA'}}
             className='col-12 col-lg-6'>
               고객센터
             </Link>
@@ -35,13 +35,13 @@ export default function Notfound() {
           <div className='linkwrap d-flex flex-column flex-lg-row mt30'>
           <Link
             to=''
-            style={{backgroundImage: 'url(/assets/img/404/404ban3.jpg', backgroundColor: '#FCF2BC'}}
+            style={{backgroundImage: 'url(/asset/img/404/404ban3.jpg', backgroundColor: '#FCF2BC'}}
             className='col-12 col-lg-6'>
               Github
             </Link>
             <Link
             to=''
-            style={{backgroundImage: 'url(/assets/img/404/404ban4.jpg', backgroundColor: '#EEEEEE'}}
+            style={{backgroundImage: 'url(/asset/img/404/404ban4.jpg', backgroundColor: '#EEEEEE'}}
             className='col-12 col-lg-6'>
               Figma
             </Link>

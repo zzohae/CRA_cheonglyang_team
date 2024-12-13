@@ -1,8 +1,14 @@
+// react
 import React, { useState } from "react";
+// modules
 import { Container, Row, Col } from "react-bootstrap";
-import CouponCard from "../../component/CouponCard";
-import RandomCoupon from "./C01randomcoupon";
+// data
 import couponData from "../../db/couponData.json";
+// Components
+import CouponCard from "../../component/CouponCard";
+// Contents
+import RandomCoupon from "./C01randomcoupon";
+// style
 import './ecoupon.scss';
 
 export default function Ecoupon() {
@@ -69,8 +75,8 @@ export default function Ecoupon() {
         <Col xs={12} md={12} lg={12}>
           <RandomCoupon
             {...randomCouponData}
-            selectedCoupon={selectedCoupon}  // 선택된 랜덤 쿠폰 전달
-            onButtonClick={handleRandomCoupon}  // 버튼 클릭 시 랜덤 쿠폰 선택
+            selectedCoupon={selectedCoupon}
+            onButtonClick={handleRandomCoupon}
           />
         </Col>
       </Row>

@@ -1,8 +1,13 @@
+// react
 import React, { useState, useEffect } from "react";
+// UIs
 import { YellowTag } from "../../component/commonUI";
-import InfoHistory from './C2infohistory';
-import MainTitle from '../../ui/MainTitle';
+// data
 import imgdata from '../../db/infoHistoryData.json';
+// Components
+import MainTitle from '../../ui/MainTitle'
+// Contents
+import InfoHistory from './C2infohistory';
 
 export default function C1aboutinfo() {
   const images = imgdata.images; // JSON 데이터에서 images 가져오기

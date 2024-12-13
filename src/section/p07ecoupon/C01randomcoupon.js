@@ -1,5 +1,8 @@
+// react
 import React, { useState, useEffect } from "react";
+// modules
 import { Row, Col, Card, Button, Modal } from "react-bootstrap";
+// Components
 import MainTitle from "../../ui/MainTitle"
 
 

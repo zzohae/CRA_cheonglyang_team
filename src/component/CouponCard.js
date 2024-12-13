@@ -1,5 +1,9 @@
+// react
+
 import React, { useState, useEffect } from "react";
+// modules
 import { Card, Button, Row, Col, Modal } from "react-bootstrap";
+// Components
 import MainTitle from "../ui/MainTitle"
 
 export default function CouponCard({

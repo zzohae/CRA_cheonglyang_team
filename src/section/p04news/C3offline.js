@@ -1,6 +1,9 @@
+// react
 import React, { useState, useEffect } from 'react';
-import EventCard from '../../component/EventCard';
+// data
 import { supabase2 } from '../../api/dbConnect';
+// Components
+import EventCard from '../../component/EventCard';
 import MyPagination from '../../component/MyPagination';
 
 export default function C3offline() {
@@ -8,13 +11,12 @@ export default function C3offline() {
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 9;
 
-  // Supabase에서 이벤트 데이터를 가져오는 함수
   useEffect(() => {
     const fetchEvents = async () => {
       const { data, error } = await supabase2
         .from('offEvents')
         .select('id, img_number, title, start_date, end_date')
-        .order('id', { ascending: true }); // id 기준 오름차순 정렬
+        .order('id', { ascending: true });
 
       if (error) {
         console.error('Error fetching events:', error);
@@ -31,7 +33,6 @@ export default function C3offline() {
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
   const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
 
-  // 페이지 변경 핸들러
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
