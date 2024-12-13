@@ -254,7 +254,7 @@ export const InputText = styled.input`
   outline: none;
 
   &:focus {
-    border-color: ${({ hasError }) => (hasError ? '#FF4A11' : '#214AEE')}!important; ${({ hasError }) => (hasError ? '#ff4d4f' : '#214AEE')};
+    border-color: #214AEE !important;
     &::placeholder {
       color: #888;
     }
@@ -293,7 +293,7 @@ export const WarningText = styled.p`
 
 
 
-export const CheckboxCustom = styled.label`
+export const CheckboxCustom = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -305,7 +305,8 @@ export const CheckboxCustom = styled.label`
     display: none;
   }
 
-  &::before {
+  label {
+    &::before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -317,9 +318,9 @@ export const CheckboxCustom = styled.label`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
+  }}
 
-  input[type='checkbox']:checked + &::before {
+  input[type='checkbox']:checked + label::before {
     background-image: url(${CheckIcon});
   }
 
