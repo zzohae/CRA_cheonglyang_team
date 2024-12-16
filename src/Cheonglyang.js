@@ -9,6 +9,7 @@ import Footer from './layout/Footer';
 // Components-unique
 import Mainpage from './section/p01main/Mainpage';
 import Allproducts from './section/p02product/Allproducts';
+import Detail from './section/p02product/Detail';
 import News from './section/p04news/News';
 import Ecoupon from './section/p07ecoupon/Ecoupon'
 import Marketinfo from './section/p05market/Marketinfo'
@@ -42,6 +43,7 @@ export default function Cheonglyang() {
       <Routes>
         <Route path='/' element={<Mainpage incartNum={incartNum} setIncartNum={setIncartNum}></Mainpage>}></Route>
         <Route path="/products/:cn?" element={<Allproducts cn='' incartNum={incartNum} setIncartNum={setIncartNum}></Allproducts>} />
+        <Route path="/products/detail/:id?" element={<Detail></Detail>} />
         <Route path="/search" element={<Allproducts keyword={keyword} setKeyword={setKeyword} incartNum={incartNum} setIncartNum={setIncartNum}></Allproducts>} />
         <Route path="/news/:en" element={<News en=''></News>} />
         <Route path="/ecoupon" element={<Ecoupon></Ecoupon>} />
