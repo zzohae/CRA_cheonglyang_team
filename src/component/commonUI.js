@@ -26,57 +26,58 @@ export const Btn = styled.button.withConfig({
   transition: color 0.3s, border-color 0.3s, background-color 0.3s;
   
   ${(props) => props.version === 'v1' && `
-    background-color: #fff;
-    color: #214AEE;
-    border: 1px solid #214AEE;
+    background-color: var(--bg-white, #FFFFFF);
+    color: var(--CL-blue, #214AEE);
+    border: 1px solid var(--CL-blue, #214AEE);
+
     
     &:hover {
-      background-color: #214AEE;
-      color: #fff;
+      background-color: var(--CL-blue, #214AEE);
+      color: var(--bg-white, #FFFFFF);
     }
   `}
 
   ${(props) => props.version === 'v2' && `
-    background-color: #214AEE;
-    color: #fff;
-    border: 1px solid #214AEE;
+    background-color: var(--CL-blue, #214AEE);
+    color: var(--bg-white, #FFFFFF);
+    border: 1px solid var(--CL-blue, #214AEE);
     
     &:hover {
-      background-color: #fff;
-      color: #214AEE;
+      background-color: var(--bg-white, #FFFFFF);
+      color: var(--CL-blue, #214AEE);
     }
   `}
 
   ${(props) => props.version === 'v3' && `
-    background-color: #fff;
-    color: #aaa;
-    border: 1px solid #aaa;
+    background-color: var(--bg-white, #FFFFFF);
+    color: var(--text-importance-3, #AAA);
+    border: 1px solid var(--text-importance-3, #AAA);
     
     &:hover {
-      background-color: #214AEE;
-      color: #fff;
-      border-color: #214AEE;
+      background-color: var(--CL-blue, #214AEE);
+      color: var(--bg-white, #FFFFFF);
+      border-color: var(--CL-blue, #214AEE);
     }
   `}
 
       ${(props) => props.version === 'v4' && `
-    background-color: #fff;
+    background-color: var(--bg-white, #FFFFFF);
     font-weight: 400;
-    color: #333;
-    border: 1px solid #214AEE;
+    color: var(--text-default, #333);
+    border: 1px solid var(--CL-blue, #214AEE);
     border-radius: ${props.borderRadius === false ? '0.3125rem' : '100px'};
   `}
     ${(props) => props.version === 'v5' && `
-      background-color: #214AEE;
-      color: #fff;
-      border: 1px solid #214AEE;
+      background-color: var(--CL-blue, #214AEE);
+      color: var(--bg-white, #FFFFFF);
+      border: 1px solid var(--CL-blue, #214AEE);
       border-radius: ${props.borderRadius === false ? '0.3125rem' : '100px'};
     `}
 
   ${(props) => props.disabled && `
-    background-color: #aaa;
-    color: #fff;
-    border: 1px solid #aaa;
+    background-color: var(--text-importance-3, #AAA);
+    color: var(--bg-white, #FFFFFF);
+    border: 1px solid var(--text-importance-3, #AAA);
   `}
 
   ${(props) => props.page === 'detail' && `
@@ -105,7 +106,7 @@ export const InCartBtn = styled.button.withConfig({
   padding: 2px 5px 0px 2px;
   border-radius: 0.3125rem;
   background: rgba(210, 210, 210, 0.30);
-  color: ${(props) => props.svgcolor || '#214AEE'};
+  color: ${(props) => props.svgcolor || 'var(--CL-blue, #214AEE)'};
 `
 
 
@@ -119,11 +120,11 @@ export const TagStyle = styled.div`
   padding: 0 0.6rem;
   background-color: ${(props) =>
     props.type === 'hot'
-      ? '#FF4500'
+      ? 'var(--point, #FF4A11)'
       : props.type === 'best'
-      ? '#214AEE'
-      : '#FFEA7D'};
-  color: ${(props) => (props.type === 'new' ? '#214AEE' : 'white')};
+      ? 'var(--CL-blue, #214AEE)'
+      : 'var(--CL-yellow, #FFEA7D)'};
+  color: ${(props) => (props.type === 'new' ? 'var(--CL-blue, #214AEE)' : 'white')};
   font-size: 0.75rem;
   font-weight: bold;
   border-radius: 0.1875rem;
@@ -158,26 +159,26 @@ export const StoreTag = styled.div`
     font-size: 0.75rem;
     border-radius: 100px;
     background-color: #F4F4F4;
-    color: #888;
+    color: var(--text-importance-2, #888);
     line-height: 1;
 
   background-color: ${(props)=>
     props.type ===  'location'
-    ? '#FFEA7D'
+    ? 'var(--CL-yellow, #FFEA7D)'
     : props.type === 'open'
-    ? '#214AEE' 
+    ? 'var(--CL-blue, #214AEE)' 
     : props.type === 'close'
-    ? '#F4F4F4'
-    : '#214AEE'};
+    ? 'var(--bg-gray-2, #F0F0F0)'
+    : 'var(--CL-blue, #214AEE)'};
 
     color: ${(props)=>
       props.type === 'location'
-      ? '#666'
+      ? 'var(--text-importance-1, #666)'
       : props.type === 'open'
-      ? '#fff'
+      ? 'var(--bg-white, #FFFFFF)'
       : props.type === 'close'
-      ? '#888'
-      : '#666'
+      ? 'var(--text-importance-2, #888)'
+      : 'var(--text-importance-1, #666)'
     };
 `
 
@@ -187,8 +188,8 @@ export const YellowTag = styled.span`
     padding: 0.375rem 0.625rem;
     align-items: center;
     gap: 0.625rem;
-    background-color: #FFEA7D;
-    color: #333;
+    background-color: var(--CL-yellow, #FFEA7D);
+    color: var(--text-default, #333);
     border-radius: 3px;
     white-space: nowrap;
 `;
@@ -209,8 +210,8 @@ export const RadioTab = styled.label`
   padding: 0 20px;
   height: 40px;
   cursor: pointer;
-  background: ${({ checked }) => (checked ? '#214AEE' : '#f0f0f0')};
-  color: ${({ checked }) => (checked ? '#fff' : '#666')};
+  background: ${({ checked }) => (checked ? 'var(--CL-blue, #214AEE)' : 'var(--bg-gray-2, #F0F0F0)')};
+  color: ${({ checked }) => (checked ? 'var(--bg-white, #FFFFFF)' : 'var(--text-importance-1, #666)')};
   
   input {
     display: none;
@@ -219,7 +220,7 @@ export const RadioTab = styled.label`
 
 export const RadioCustom = styled.label`
   font-family: 'Pretendard', sans-serif;
-  color: #666;
+  color: var(--text-importance-1, #666);
   font-size: clamp(0.875rem, 3vw, 1rem);
   display: flex;
   align-items: center;
@@ -249,19 +250,19 @@ export const InputText = styled.input`
   // height: 3.75rem;
   padding: 0.9375rem;
   font-size: 1rem;
-  border: 1px solid ${({ hasError }) => (hasError ? '#ff4d4f' : '#ccc')};
+  border: 1px solid ${({ hasError }) => (hasError ? 'var(--point, #FF4A11)' : 'var(--bg-gray-1, #D2D2D2)')};
   border-radius: 0.3125rem;
   outline: none;
 
   &:focus {
-    border-color: #214AEE !important;
+    border-color: var(--CL-blue, #214AEE) !important;
     &::placeholder {
-      color: #888;
+      color: var(--text-importance-2, #888);
     }
   }
 
   &::placeholder {
-    color: #aaa;
+    color: var(--text-importance-3, #AAA);
     font-size: clamp(0.875rem, 3vw, 1rem);
   }
 `;
@@ -271,13 +272,13 @@ export const SelectCustom = styled.select`
   width: ${({ fullWidth = true }) => (fullWidth ? '100%' : 'auto')};
   padding: 0.9375rem;
   font-size: 1rem;
-  border: 1px solid ${({ hasError }) => (hasError ? '#ff4d4f' : '#ccc')};
+  border: 1px solid ${({ hasError }) => (hasError ? 'var(--point, #FF4A11)' : 'var(--bg-gray-1, #D2D2D2)')};
   border-radius: 0.3125rem;
   outline: none;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #fff;
+  background-color: var(--bg-white, #FFFFFF);
   background-image: url(${BottomArrow});
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -299,7 +300,7 @@ export const CheckboxCustom = styled.div`
   cursor: pointer;
   font-family: 'Pretendard', sans-serif;
   line-height: normal;
-  color: ${({ color }) => color || '#333'};
+  color: ${({ color }) => color || 'var(--text-default, #333)'};
 
   input[type='checkbox'] {
     display: none;
@@ -312,8 +313,8 @@ export const CheckboxCustom = styled.div`
     width: 20px;
     height: 20px;
     margin-right: 1.25rem;
-    border: 1px solid #214AEE;
-    border-radius: 0.3125rem;
+    border: 1px solid var(--CL-blue, #214AEE);
+    border-radius: 0.375rem;
     background-color: white;
     background-size: contain;
     background-repeat: no-repeat;
@@ -325,6 +326,6 @@ export const CheckboxCustom = styled.div`
   }
 
   span {
-    color: #aaa;
+    color: var(--text-importance-3, #AAA);
   }
 `;

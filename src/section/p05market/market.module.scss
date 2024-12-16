@@ -14,10 +14,11 @@
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 2px;
-    background-color: #214aee;
-    margin-top: 90px;
-    margin-bottom: 210px;
+    width: 0.125rem;
+    background-color: var(--CL-blue, #214AEE);
+    margin-top: 5.625rem;
+    margin-bottom: 13.125rem;
+    transform: translateX(-0.125rem);
   }
 
   .infoHistory-item {
@@ -35,7 +36,7 @@
       p {
         font-size: 1.625rem;
         line-height: normal;
-        color: #333;
+        color: var(--text-default, #333);
       }
       br{
         display: none;
@@ -101,4 +102,29 @@
     }
     }
   }
+}
+
+
+// storelist
+.storelistBox{
+  &:first-child{
+    padding-bottom: 0;
+  }
+}
+
+
+// storeinfo
+.searchboxMK {
+  width: 100% !important;
+}
+.mytab {
+  border-bottom: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 991px) {
+  .map{
+    height: 30vh;
+    margin-bottom: 1.875rem;
+  } 
 }

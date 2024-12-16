@@ -8,6 +8,8 @@ import Searchbox from '../../component/Searchbox';
 import MainTitle from '../../ui/MainTitle'
 // Contents
 import Storelist from './C4storelist';
+// style
+import styles from './market.module.scss';
 
 export default function StoreInfo() {
   const [searchKeyword, setSearchKeyword] = useState("");
@@ -82,22 +84,20 @@ export default function StoreInfo() {
     }
   };
   
-  
-  
 
   return (
     <div className='container storeinfo' style={{ padding: '0 0 150px 0' }}>
-      <MainTitle textColor='#214aee' h2size='34px'>매장 소개</MainTitle>
+      <MainTitle textColor='var(--CL-blue, #214AEE)' h2size='34px'>매장 소개</MainTitle>
 
       {/* 검색 및 탭 */}
       <div className="row w-100 mt-3 gx-2">
-        <div className="col-5 ps-0 pe-4">
+        <div className='col-12 col-lg-5 ps-0 pe-4 order-1 order-lg-0'>
           <Searchbox
             keyword={searchKeyword}
             setKeyword={setSearchKeyword}
-            className='order-0 order-lg-1 mb-2'/>
-
-          <div className="mytab" style={{ borderBottom: '0', padding: '0', marginBottom: '0' }}>
+            isVisible={true}
+            className={`${styles.searchboxMK} d-flex order-0 order-lg-1 mb-2`}/>
+          <div className="mytab">
             <ul className="mt-2 mb-4 d-flex list-unstyled">
               <li className={`me-2 px-3 py-2 ${activeTab === "all" ? "active" : ""}`}
                 onClick={() => setActiveTab("all")}
@@ -136,14 +136,14 @@ export default function StoreInfo() {
             <Storelist
               stores={searchedStores}
               onStoreClick={handleStoreClick}
-              storeRefs={storeRefs} // 참조 전달
+              storeRefs={storeRefs}
             />
           </div>
         </div>
 
         {/* 지도 API */}
         <div
-          className="col-7"
+          className={`${styles.map} col-12 col-lg-7 order-0 order-lg-1`}
           style={{ padding: '0', borderRadius: '8px', overflow: 'hidden' }}>
           <MapsAPI
             center={{ lat: 37.581127, lng: 127.043834 }}
