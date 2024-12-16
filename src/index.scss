@@ -128,9 +128,15 @@ section {
   margin-top: 30px;
 }
 
-.mb50 {
-  margin-bottom: 50px;
+.mb-30 {
+  margin-bottom: 30px !important;
 }
+@media (min-width: 992px) {
+  .mb-lg-50 {
+    margin-bottom: 50px !important;
+  }
+}
+
 
 .mb150 {
   margin-bottom: 150px;
