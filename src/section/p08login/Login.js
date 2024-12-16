@@ -71,7 +71,7 @@ export default function Login({ isLoggedIn, setIsLoggedIn }) {
     <div className="d-flex flex-column align-items-center">
       <div className="container mycontainer row justify-content-center">
         <div className="w-100 d-flex flex-column gap-3" style={{maxWidth: '427px'}}>
-        <MainTitle nomargin='true' textColor='#214aee' h2size='34px'>로그인/회원가입</MainTitle>
+        <MainTitle nomargin='true' textColor='var(--CL-blue, #214AEE)' h2size='34px'>로그인/회원가입</MainTitle>
 
           <div className="d-flex gap-2">
             <RadioTab checked={userType === "general"} htmlFor="general">
@@ -131,7 +131,7 @@ export default function Login({ isLoggedIn, setIsLoggedIn }) {
             </div>
           </div>
 
-          <div className="ms-auto fs-h6" style={{color:'#888'}}>
+          <div className="ms-auto fs-h6" style={{color:'var(--text-importance-2, #888)'}}>
             <a href="/find-username">아이디 찾기</a> |{" "}
             <a href="/find-password">비밀번호 찾기</a>
           </div>

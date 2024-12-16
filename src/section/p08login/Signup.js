@@ -155,7 +155,7 @@ export default function Signup() {
     <div className="container mycontainer d-flex flex-column align-items-start justify-content-center signupform">
       <div className="row">
         <div className="d-flex align-items-end gap-3 lineCont">
-          <MainTitle nomargin="true" textColor="#214aee" h2size="34px">
+          <MainTitle nomargin="true" textColor="var(--CL-blue, #214AEE)" h2size="34px">
             회원가입
           </MainTitle>{" "}
           <p className="fs-h6">
@@ -473,7 +473,7 @@ export default function Signup() {
             </label>
 
             <div className="agree d-flex flex-column InputArea">
-              <CheckboxCustom color="#666" className="mb-3">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-3">
                 <div>
                   <input
                     class="form-check-input"
@@ -488,7 +488,7 @@ export default function Signup() {
                 </div>
               </CheckboxCustom>
 
-              <CheckboxCustom color="#666" className="mb-2">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-2">
                 <div class="d-flex align-items-center">
                   <input
                     class="form-check-input"
@@ -507,7 +507,7 @@ export default function Signup() {
                 </div>
               </CheckboxCustom>
 
-              <CheckboxCustom color="#666" className="mb-2">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-2">
                 <div class="d-flex align-items-center">
                   <input
                     class="form-check-input"
@@ -526,7 +526,7 @@ export default function Signup() {
                 </div>
               </CheckboxCustom>
 
-              <CheckboxCustom color="#666" className="mb-2">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-2">
                 <div>
                   <input
                     class="form-check-input"
@@ -541,7 +541,7 @@ export default function Signup() {
                 </div>
               </CheckboxCustom>
 
-              <CheckboxCustom color="#666" className="mb-2">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-2">
                 <div>
                   <input
                     class="form-check-input"
@@ -556,7 +556,7 @@ export default function Signup() {
                 </div>
               </CheckboxCustom>
 
-              <CheckboxCustom color="#666" className="mb-2">
+              <CheckboxCustom color="var(--text-importance-1, #666)" className="mb-2">
                 <div>
                   <input
                     class="form-check-input"
