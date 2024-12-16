@@ -60,7 +60,7 @@ export default function BestProduct({ rowclass, prdId, img, prodName, store, ori
             <p className="ratingNum">({rating.toFixed(1)})</p>
           </div>
         </dl>
-        <div className="order-5 w-100 d-flex d-md-none mobilecart">
+        <div className="order-5 w-100 d-flex mobilecart">
         <InCartBtn
           svgcolor="#D2D2D2"
           page="mainbest"
@@ -84,33 +84,10 @@ export default function BestProduct({ rowclass, prdId, img, prodName, store, ori
         >
           <CartIcon></CartIcon>
         </InCartBtn>
-          <Btn version="v1" page="mainbest">
+          <Btn version="v1" page="mainbest" className='d-md-none'>
             바로 구매
           </Btn>
         </div>
-        <InCartBtn
-          className="d-none d-md-flex"
-          svgcolor="var(--bg-gray-1, #D2D2D2)"
-          onClick={() => {
-            setIncartNum((prev) => {
-              const updatedCart = [...prev];
-
-              const existingItemIndex = updatedCart.findIndex(
-                (item) => item.prdId === prdId
-              );
-
-              if (existingItemIndex !== -1) {
-                updatedCart[existingItemIndex].quantity += 1;
-              } else {
-                updatedCart.push({ prdId, quantity: 1 });
-              }
-
-              return updatedCart;
-            });
-          }}
-        >
-          <CartIcon></CartIcon>
-        </InCartBtn>
       </div>
     </div>
   )
