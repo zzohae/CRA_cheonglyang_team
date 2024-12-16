@@ -75,10 +75,11 @@ export default function C3best({incartNum, setIncartNum}) {
     <div className='container d-flex flex-row align-items-start justify-content-center bestCont'>
       <div className='row'>
         <MainTitle textColor='#214aee' h2size='34px'>{allData.mainPagetitle[1].title}</MainTitle>
+        <div className='row align-items-stretch m-0 p-0'>
         {bestProducts.map((v, index) => (
           <BestProduct
             key={index}
-            rowclass='col-12 col-md-4 d-flex flex-row flex-md-column align-items-center align-items-md-start'
+            rowclass='col-md-4 d-flex flex-row flex-md-column align-items-center align-items-md-start'
             prdId={v.id}
             promobadge={v.promobadge}
             img={`/asset/img/product/${v.img}.jpg`}
@@ -92,6 +93,7 @@ export default function C3best({incartNum, setIncartNum}) {
             setIncartNum={setIncartNum}
           />
         ))}
+        </div>
       </div>
     </div>
   )
