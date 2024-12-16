@@ -104,11 +104,12 @@
     .maintitle:after{
         content: '';
         display: inline-block;
-        width: 34px;
-        height: 34px;
+        width: clamp(1.5rem, 5vw, 2.125rem); 
+        height: clamp(1.5rem, 5vw, 2.125rem);
         margin-left: 5px;
         transform: translateY(4px);
         background: url(../../../public/asset/img/maintitle/thumsup.png);
+        background-size: contain;
       }
   }
 
@@ -187,6 +188,7 @@
     margin-left: 5px;
     transform: translateY(4px);
     background: url(../../../public/asset/img/maintitle/cart.png);
+    background-size: contain;
   }
 }
 
@@ -272,11 +274,12 @@
   .maintitle:after{
     content: '';
     display: inline-block;
-    width: 34px;
-    height: 34px;
+    width: clamp(1.5rem, 5vw, 2.125rem); 
+    height: clamp(1.5rem, 5vw, 2.125rem);
     margin-left: 4px;
     transform: translateY(4px);
     background: url(../../../public/asset/img/maintitle/movie.png);
+    background-size: contain;
   }
   .prodwrap {
     row-gap: 20px;
@@ -301,11 +304,12 @@
   .maintitle:after {
     content: '';
     display: inline-block;
-    width: 34px;
-    height: 34px;
+    width: clamp(1.5rem, 5vw, 2.125rem); 
+    height: clamp(1.5rem, 5vw, 2.125rem);
     margin-left: 4px;
     transform: translateY(4px);
     background: url(../../../public/asset/img/maintitle/sparkle.png);
+    background-size: contain;
   }
 
   .mainreviewwrap {
