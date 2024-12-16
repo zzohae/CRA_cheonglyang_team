@@ -40,7 +40,7 @@ export default function C4cardnews() {
 
   return (
     <div>
-      <div className="row gx-4 gy-4">
+      <div className="row gx-4 gy-4 justify-content-start">
         {currentEvents.map((event) => (
           <EventCard
             key={event.id}

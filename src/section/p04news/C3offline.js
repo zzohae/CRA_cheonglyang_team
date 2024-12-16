@@ -16,14 +16,24 @@ export default function C3offline() {
       const { data, error } = await supabase2
         .from('offEvents')
         .select('id, img_number, title, start_date, end_date')
-        .order('id', { ascending: true });
+        .order('start_date', { ascending: false });
 
       if (error) {
         console.error('Error fetching events:', error);
-      } else {
-        setEvents(data);
+        return;
       }
-    };
+      const today = new Date();
+
+        // expired, !expired 분리
+        const futureEvents = data.filter(event => new Date(event.end_date) >= today);
+        const pastEvents = data.filter(event => new Date(event.end_date) < today);
+
+        // 데이터별 순서
+        const sortedEvents = [...futureEvents, ...pastEvents];
+
+        // 상태 업데이트
+        setEvents(sortedEvents);
+      };
 
     fetchEvents();
   }, []);
@@ -38,13 +48,22 @@ export default function C3offline() {
       setCurrentPage(page);
     }
   };
+
+  // 종료된 이벤트
+  const isEventExpired = (endDate) => {
+    const currentDate = new Date();
+    const eventEndDate = new Date(endDate);
+    return currentDate > eventEndDate;
+  };
+
   return (
     <div>
-      <div className="row gx-4 gy-4">
+      <div className="row gx-4 gy-4 justify-content-start">
         {currentEvents.map((event) => {
           const formattedStartDate = new Date(event.start_date).toLocaleDateString();
           const formattedEndDate = new Date(event.end_date).toLocaleDateString();
           const formattedPeriod = `${formattedStartDate} ~ ${formattedEndDate}`;
+          const expired = isEventExpired(event.end_date);
 
           return (
             <EventCard
@@ -52,6 +71,7 @@ export default function C3offline() {
               imgSrc={`/asset/img/localevent/localcard_${event.img_number}.jpg`}
               title={event.title}
               period={formattedPeriod}
+              isExpired={expired}
             />
           );
         })}

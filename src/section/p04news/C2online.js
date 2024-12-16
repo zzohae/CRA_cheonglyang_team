@@ -16,14 +16,24 @@ export default function C2online() {
       const fetchEvents = async () => {
         const { data, error } = await supabase2
           .from('onEvents')
-          .select('id, img_number, title, start_date, end_date')
-          .order('id', { ascending: true });
+          .select('img_number, title, start_date, end_date')
+          .order('start_date', { ascending: false });
 
         if (error) {
           console.error('Error fetching events:', error);
-        } else {
-          setEvents(data);
+          return;
         }
+        const today = new Date();
+
+        // expired, !expired 분리
+        const futureEvents = data.filter(event => new Date(event.end_date) >= today);
+        const pastEvents = data.filter(event => new Date(event.end_date) < today);
+
+        // 데이터별 순서
+        const sortedEvents = [...futureEvents, ...pastEvents];
+
+        // 상태 업데이트
+        setEvents(sortedEvents);
       };
 
       fetchEvents();
@@ -49,7 +59,7 @@ export default function C2online() {
 
     return (
       <div>
-        <div className="row gx-4 gy-4">
+        <div className="row gx-4 gy-4 justify-content-start">
           {currentEvents.map((event) => {
             const formattedStartDate = new Date(event.start_date).toLocaleDateString();
             const formattedEndDate = new Date(event.end_date).toLocaleDateString();
