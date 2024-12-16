@@ -683,6 +683,13 @@ footer {
   margin-bottom: 30px;
   border-bottom: 1px solid var(--CL-blue, #214AEE);
   gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   li {
     border-radius: 30px;
     min-width: 85px;
@@ -692,6 +699,11 @@ footer {
     justify-content: center;
     padding: 0 1.25rem;
     background-color: var(--bg-gray-2, #F0F0F0);
+    color: var(--text-importance-2, #888);
+    font-weight: 400;
+    font-size: var(--font-size-18);
+    flex-shrink: 0;
+    cursor: pointer;
     a {
       display: flex;
       width: 100%;

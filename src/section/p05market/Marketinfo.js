@@ -31,7 +31,7 @@ export default function Marketinfo() {
   return (     
     <div className="d-flex flex-column align-items-center">
       <div className="container mycontainer">
-        <ul className="d-flex flex-wrap justify-content-center justify-content-xl-start mytab">
+        <ul className="d-flex justify-content-start mytab">
           {submenu &&
             submenu.map((item, index) => (
               <li key={index}

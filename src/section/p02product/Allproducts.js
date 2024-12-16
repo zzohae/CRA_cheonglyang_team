@@ -97,7 +97,7 @@ export default function Allproducts({ keyword, incartNum, setIncartNum }) {
       <div className="container">
         <h2 className="categorytitle">{getSearchTitle(searchKeyword)}</h2>
 
-        <ul className="d-flex flex-wrap justify-content-center justify-content-xl-start mytab">
+        <ul className="d-flex justify-content-start mytab">
           <li className={`d-flex justify-content-center align-items-center ${!cn ? 'active' : ''}`}>
             <Link to="/products">전체 상품</Link>
           </li>

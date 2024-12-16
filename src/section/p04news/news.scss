@@ -19,32 +19,26 @@
   }
 }
 
-.event-img{
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
-}
-
-.event-row {
-  border: 1px solid var(--bg-gray-1, #D2D2D2);
-  height: 9.26vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  span {
-    color: var(--text-importance-2, #888);
-  }
-}
-
 .eventCard {
-  img {
+  .event-img {
     border-radius: 0.3125rem 0.3125rem 0 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
   }
   .event-row {
     border-radius:  0 0 0.3125rem 0.3125rem;
+    border: 1px solid var(--bg-gray-1, #D2D2D2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: var(--text-importance-2, #888);
+      font-weight: normal;
+    }
   }
 }
 

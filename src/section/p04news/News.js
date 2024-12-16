@@ -49,7 +49,7 @@ export default function News() {
           />
         </div>
 
-        <ul className="d-flex flex-wrap justify-content-center justify-content-xl-start mytab">
+        <ul className="d-flex justify-content-start mytab">
           {submenu.map((v, i) => (
             <li
               className={`d-flex justify-content-center align-items-center ${
