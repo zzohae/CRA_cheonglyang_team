@@ -38,7 +38,7 @@ export default function Cheonglyang() {
   return (
     <div className={`wrap ${scrollPosition < 200 ? "" : "scrolled"}`}>
       <ScrolltoTop></ScrolltoTop>
-      <Header keyword={keyword} setKeyword={setKeyword} incartNum={incartNum}></Header>
+      <Header keyword={keyword} setKeyword={setKeyword} incartNum={incartNum} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Header>
       <Routes>
         <Route path='/' element={<Mainpage incartNum={incartNum} setIncartNum={setIncartNum}></Mainpage>}></Route>
         <Route path="/products/:cn?" element={<Allproducts cn='' incartNum={incartNum} setIncartNum={setIncartNum}></Allproducts>} />

@@ -82,7 +82,7 @@ export default function Header({ keyword, setKeyword, incartNum, isLoggedIn, set
       </div>
 
       {/* 모바일 메뉴 */}
-      <Mbtab isOpen={isMenuOpen} toggleMenu={toggleMenu}></Mbtab>
+      <Mbtab isOpen={isMenuOpen} toggleMenu={toggleMenu} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Mbtab>
     </header>
   )
 }
