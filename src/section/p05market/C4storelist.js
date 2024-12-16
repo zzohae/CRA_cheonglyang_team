@@ -4,10 +4,12 @@ import React from 'react';
 import { StoreTag } from '../../component/commonUI';
 // svg
 import { ReactComponent as Callnum } from '../../asset/svg/graphic/phone.svg';
+// style
+import styles from './market.module.scss';
 
 export default function Storelist({ stores, onStoreClick, storeRefs  }) {
   return (
-    <div className='storelistBox'
+    <div className={styles.storelistBox}
     style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
       {stores.map((store, index) => (
         <div
@@ -25,7 +27,7 @@ export default function Storelist({ stores, onStoreClick, storeRefs  }) {
               width: '150px',
               height: '150px',
               borderRadius: '10px',
-              color: '#fff',
+              color: 'var(--bg-white, #FFFFFF)',
               flexShrink: 0,
             }}>
             <img
@@ -42,7 +44,7 @@ export default function Storelist({ stores, onStoreClick, storeRefs  }) {
           <div className="info-box w-100 d-flex flex-column" style={{ flexGrow: 1, gap: '0.625rem' }}>
             {/* 상호명, 위치 */}
             <div className="d-flex justify-content-between">
-              <h3 className="fs-h3" style={{ color: '#333' }}>{store.title}</h3>
+              <h3 className="fs-h3" style={{ color: 'var(--text-default, #333)' }}>{store.title}</h3>
               <StoreTag type="location">{store.location}</StoreTag>
             </div>
 
@@ -51,17 +53,17 @@ export default function Storelist({ stores, onStoreClick, storeRefs  }) {
               <StoreTag type={store.isOpen ? 'open' : 'close'}>
                 {store.isOpen ? '영업중' : '영업전'}
               </StoreTag>
-              <h6 className="fs-h6" style={{ color: '#666' }}>{store.opentime}</h6>
+              <h6 className="fs-h6" style={{ color: 'var(--text-importance-1, #666)' }}>{store.opentime}</h6>
             </div>
 
             {/* 매장번호 */}
             <div className="d-flex gap-1 align-items-center">
               <Callnum />
-              <h6 className="fs-h6" style={{ color: '#666' }}>{store.number}</h6>
+              <h6 className="fs-h6" style={{ color: 'var(--text-importance-1, #666)' }}>{store.number}</h6>
             </div>
 
             {/* 판매 물품 */}
-            <h3 className="fs-h4" style={{ color: '#333', wordBreak: 'keep-all' }}>{store.items}</h3>
+            <h3 className="fs-h4" style={{ color: 'var(--text-default, #333)', wordBreak: 'keep-all' }}>{store.items}</h3>
 
             {/* 결제 수단 */}
             <div className="d-flex flex-wrap gap-1 align-items-center">

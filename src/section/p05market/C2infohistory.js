@@ -5,7 +5,7 @@ import historydata from '../../db/infoHistoryData.json';
 // svg
 import { ReactComponent as Circle } from '../../asset/svg/graphic/infoHistory-circle.svg';
 // style
-import styles from './infoHistory.module.scss';
+import styles from './market.module.scss';
 
 const { infoHistoryData } = historydata;
 
@@ -40,7 +40,7 @@ const C2infohistory = () => {
               className={`${styles["infoHistory-content"]} ${
                 index % 2 === 0 ? styles.left : styles.right
               }`}>
-              <h3 className="fs-h3" style={{ color: "#214aee" }}>
+              <h3 className="fs-h3" style={{ color: "var(--CL-blue, #214AEE)" }}>
                 {item.year}
               </h3>
               <p
