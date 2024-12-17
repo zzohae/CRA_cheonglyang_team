@@ -7,7 +7,7 @@ import BottomArrow from '../asset/svg/common/bottom_arrow.svg';
 import CheckIcon from '../asset/svg/common/check_active.svg';
 
 export const Btn = styled.button.withConfig({
-  shouldForwardProp: (prop) => !['version', 'page'].includes(prop),
+  shouldForwardProp: (prop) => !['version', 'page', 'gap'].includes(prop),
 })`
   font-family: 'Pretendard', sans-serif;
   font-weight: 500;
@@ -89,8 +89,28 @@ export const Btn = styled.button.withConfig({
     border-radius: 0.3125rem;
     width: calc(100% - 40px - 10px);
   `}
+
+  ${(props) => props.gap && `
+    gap: 4px;
+  `}
 `;
 
+
+export const CuponBtn = styled.button`
+  display: flex;
+  padding: 0.5rem 0.9375rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.125rem;
+  align-self: stretch;
+  border-radius: var(--radius-5, 0.3125rem);
+  background: var(--CL-yellow, #FFEA7D);
+  border: none;
+  font-size: var(--font-size-14, 0.875rem);
+  font-weight: 400;
+  color: var(--CL-blue, #214AEE);
+  line-height: normal;
+`
 
 
 export const InCartBtn = styled.button.withConfig({

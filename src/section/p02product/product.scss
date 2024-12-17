@@ -83,7 +83,7 @@
     .nav-link {
       color: var(--text-importance-1, #666);
       font-weight: 500;
-      font-size: 22px;
+      font-size: clamp(var(--font-size-16), 3.5vw, var(--font-size-18));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -145,17 +145,19 @@
   width: 100%;
   max-height: 572px;
   background-color: #bd822a;
+  border-radius: var(--radius-8, 0.5rem);
 }
 
 .detailInfo {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid var(--bg-gray-1, #D2D2D2);
-  li:nth-child(1) {
+  li{
     gap: 15px;
+  &:nth-child(1) {
     div {
       display: flex;
       align-items: center;
@@ -167,12 +169,16 @@
       svg {
         height: 13px;
       }
+      .share{
+        height: 25px;
+      }
     }
     h3 {
       color: var(--text-default, #333);
       font-size: 26px;
       font-weight: 700;
       line-height: 1.2;
+      }
     }
   }
   li:nth-child(2) {
@@ -210,14 +216,14 @@
       dt {
         color: var(--text-importance-2, #888);
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1;
         width: 70px;
       }
       dd {
         color: var(--text-importance-2, #888);
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1;
       }
     }
