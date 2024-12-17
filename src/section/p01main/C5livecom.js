@@ -48,7 +48,7 @@ export default function C5livecom({ incartNum, setIncartNum }) {
     <div className='container d-flex flex-column align-items-start justify-content-center livecomCont'>
       <MainTitle textColor='#214aee' h2size='34px'>{allData.mainPagetitle[2].title}</MainTitle>
       <div className='row livecomCont justify-content-between'>
-        <div className='row col-12 col-lg-6 col-xl-7 order-1 order-lg-0 prodwrap p-0 mx-0'>
+        <div className='row col-lg-6 col-xl-7 order-1 order-lg-0 prodwrap p-0 mx-0'>
           {liveProducts.map((v, index) => (
             <Product
               key={index}
@@ -66,7 +66,7 @@ export default function C5livecom({ incartNum, setIncartNum }) {
             />
           ))}
         </div>
-        <div className='col-12 col-lg-6 col-xl-5 order-0 order-lg-1'>
+        <div className='col-lg-6 col-xl-5 order-0 order-lg-1'>
           <div className='liveimg'></div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function C1aboutinfo() {
     <div className="container p-0">
             <MainTitle textColor='#214aee' h2size='34px'>청량리종합시장</MainTitle>
             <div className="row gx-3 mt-3">
-              <div className="col-12 col-xl-7" style={{ height: "29.625rem", overflow: "hidden" }}>
+              <div className="col-xl-7" style={{ height: "29.625rem", overflow: "hidden" }}>
                 <img
                   src={selectedImage}
                   alt="청량리종합시장 이미지"
@@ -44,7 +44,7 @@ export default function C1aboutinfo() {
                   }}/>
             </div>
 
-              <div className="col-12 col-xl-5 mt-md-3 mt-lg-0 d-flex justify-content-between"
+              <div className="col-xl-5 mt-md-3 mt-lg-0 d-flex justify-content-between"
                 style={{ flexDirection: "column" }}>
                 <div className="order-1 order-xl-0" style={{
                     borderBottom: "2px solid #214AEE",

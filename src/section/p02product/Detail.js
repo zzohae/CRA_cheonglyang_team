@@ -140,14 +140,14 @@ export default function Detail() {
           <div
             className="prodInfoDetail d-flex wrap"
           >
-            <div className="col-12 col-lg-6">
+            <div className="col-lg-6">
               <img
                 className="tempimg"
                 src={`/asset/img/product/${targetProduct.img}.jpg`}
                 alt={targetProduct.prodName}
               />
             </div>
-            <div className="col-12 col-lg-6">
+            <div className="col-lg-6">
               <ul className="detailInfo">
                 <li className="d-flex flex-column align-items-start">
                   <div>
@@ -480,11 +480,11 @@ export default function Detail() {
               >
                 <h3>배송 정보</h3>
                 <dl className="d-flex flex-wrap">
-                  <div className="d-flex col-12 col-lg-6">
+                  <div className="d-flex col-lg-6">
                     <dt className="text-center col-4">배송 방법</dt>
                     <dd className="w-100">신선/냉장/냉동</dd>
                   </div>
-                  <div className="d-flex col-12 col-lg-6">
+                  <div className="d-flex col-lg-6">
                     <dt className="text-center col-4">배송 지역</dt>
                     <dd className="w-100">
                       전국 지역 (단, 일부 산간벽지 및 도서 지역은 추가 요금이
