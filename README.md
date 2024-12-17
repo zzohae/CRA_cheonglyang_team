@@ -72,13 +72,14 @@ React를 이용하여 현대적이고 직관적인 UI구축을 통해 UX 개선�
 
 
 # 03. 개발 환경
-node v20.17.0  
-Bootstrap v5.3.3
+노드 20.16.0
+![dependencies](https://github.com/user-attachments/assets/f6d1afd0-cea8-42c9-9dc6-e4d6edc05598)
+
 
 # 04. 설계
-디자인을 토대로 컴포넌트 관계도와 정보구조도 Figjam에서 작성  
-1차
-<img width="100%" alt="컴포넌트관계도_2차" src="https://github.com/user-attachments/assets/63a7449c-5dd0-4759-9f0e-fa96f87919d2">
+디자인을 토대로 컴포넌트 관계도와 정보구조도 Figjam에서 작성    
+4차
+<img width="100%" alt="컴포넌트관계도_4차" src="https://github.com/user-attachments/assets/7e040b5d-f611-4c7b-9c94-ddc6172f44f9">
 
 # 05. 개발 워크플로우
 * Branch 전략  
