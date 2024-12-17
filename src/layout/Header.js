@@ -73,7 +73,7 @@ export default function Header({ keyword, setKeyword, incartNum, isLoggedIn, set
             }
           </ul>
           <div className='delivwrap'>
-          <Btn version='v2' className='delivery'>
+          <Btn version='v2' gap={true} className='delivery'>
             <Delivericon width='24' height='24'></Delivericon>
             {allData.delivery.title}
           </Btn>

@@ -7,8 +7,10 @@ import { Autoplay } from 'swiper/modules';
 // data
 import { supabase } from "../../api/dbConnect";
 // UIs
-import { Btn } from "../../component/commonUI";
+import { Btn, CuponBtn, SelectCustom } from "../../component/commonUI";
 // svg
+import { ReactComponent as CouponDn } from '../../asset/svg/graphic/coupon_down.svg';
+import { ReactComponent as Share } from '../../asset/svg/common/share.svg';
 // Components
 import QuantityCounter from "../../component/QuantityCounter";
 import Product from "../../component/Product";
@@ -166,7 +168,10 @@ export default function Detail() {
                       />
                     </svg>
                   </div>
-                  <h3>{targetProduct.prodName}</h3>
+                  <div className="d-flex justify-content-between w-100">
+                    <h3>{targetProduct.prodName}</h3>
+                    <Share className="share" />
+                  </div>
                 </li>
                 <li>
                   <span className="average-rating">
@@ -223,7 +228,7 @@ export default function Detail() {
                       {formatNum(targetProduct.saleprice)}
                       <span>원</span>
                     </em>
-                    <button>쿠폰받기</button>
+                    <CuponBtn>쿠폰받기<CouponDn /></CuponBtn>
                   </div>
                 </li>
                 <div className="minorinfo d-flex flex-column">
@@ -242,10 +247,10 @@ export default function Detail() {
                 </div>
               </ul>
               <form action="" className="d-flex flex-column">
-                <select name="" id="">
+                <SelectCustom>
                   <option value="">우리시장 빠른배송</option>
                   <option value="">일반배송</option>
-                </select>
+                </SelectCustom>
                 <div className="d-flex flex-column decision">
                   <p className="w-100">
                     {targetProduct.prodName} ({targetProduct.volume})

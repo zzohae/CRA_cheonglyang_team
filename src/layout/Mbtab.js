@@ -150,7 +150,7 @@ export default function Mbtab({ isLoggedIn, setIsLoggedIn, isOpen, toggleMenu })
 
           {/* 카테고리 */}
           <Link to ={`/products`} onClick={toggleMenu} >
-            <div className={styles.category}><h3 className="d-flex align-items-center fs-h3 mt-3 pb-3 border-bottom">상품 카테고리 <span className='fs-h5 ps-1'>전체보기&gt;</span></h3>
+            <div className={styles.category}><h3 className="d-flex align-items-center fs-h3 mt-3 pb-3 border-bottom">상품 카테고리 <span className='fs-h5 d-flex align-items-center ps-1'>전체보기<Arrow style={{ height: '12px' }} /></span></h3>
             </div>
           </Link>
   
