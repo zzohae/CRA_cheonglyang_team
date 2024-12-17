@@ -128,14 +128,20 @@ section {
   margin-top: 30px;
 }
 
-.mb-30 {
-  margin-bottom: 30px !important;
+.mb-20 {
+  margin-bottom: 1.25rem !important; /* 20px → 1.25rem */
+}
+@media (min-width: 576px) {
+  .mb-lg-30 {
+    margin-bottom: 1.875rem !important; /* 30px → 1.875rem */
+  }
 }
 @media (min-width: 992px) {
   .mb-lg-50 {
-    margin-bottom: 50px !important;
+    margin-bottom: 3.125rem !important; /* 50px → 3.125rem */
   }
 }
+
 
 
 .mb150 {
@@ -679,19 +685,23 @@ footer {
 
 // mytab 탭
 .mytab {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 1.825rem;
+  margin-bottom: 1.825rem;
   border-bottom: 1px solid var(--CL-blue, #214AEE);
-  gap: 10px;
+  gap: 0.625rem;
   width: 100%;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  @media (max-width: 991px){
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
   &::-webkit-scrollbar {
     display: none;
   }
   li {
-    border-radius: 30px;
+    border-radius: 100px;
     min-width: 85px;
     height: 40px;
     display: flex;
@@ -701,7 +711,7 @@ footer {
     background-color: var(--bg-gray-2, #F0F0F0);
     color: var(--text-importance-2, #888);
     font-weight: 400;
-    font-size: var(--font-size-18);
+    font-size: clamp(var(--font-size-16), 3.5vw, var(--font-size-18));
     flex-shrink: 0;
     cursor: pointer;
     a {
@@ -752,5 +762,40 @@ footer {
       background: none;
       opacity: .5;
     }
+  }
+}
+
+// Product.js 장바구니 팝업
+.popup {
+  font-family: 'pretendard';
+  font-weight: 500;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  background: var(--text-default, #333333);
+  color: var(--bg-white, #FFFFFF);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1.25rem);
   }
 }

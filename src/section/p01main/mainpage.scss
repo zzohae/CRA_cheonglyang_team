@@ -258,7 +258,7 @@
     z-index: 10;
     h6 {
       color: #666;
-      font-size: 22px;
+      font-size: clamp(var(--font-size-18), 4vw, var(--font-size-22));
       font-weight: 500;
     }
     p {

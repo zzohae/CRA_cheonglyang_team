@@ -100,13 +100,14 @@ export const InCartBtn = styled.button.withConfig({
   justify-content: center;
   align-items: center;
   border: none;
-  width: ${(props) => (props.page === 'mainbest' ? '40px' : '3.125rem')};
-  max-width: 50px;
-  height: ${(props) => (props.page === 'mainbest' ? '40px' : '3.125rem')};
+  width: ${(props) => (props.page === 'mainbest' ? '40px' : '2.5rem')};
+  max-width: 40px;
+  height: ${(props) => (props.page === 'mainbest' ? '40px' : '2.5rem')};
   padding: 2px 5px 0px 2px;
   border-radius: 0.3125rem;
   background: rgba(210, 210, 210, 0.30);
   color: ${(props) => props.svgcolor || 'var(--CL-blue, #214AEE)'};
+  flex-shrink: 0;
 `
 
 
@@ -114,10 +115,10 @@ export const TagStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.5rem;
+  height: clamp(1.275rem, 2.5vw, 1.5rem);
   margin-left: 0.5rem;
   left: ${(props) => (props.index || 0) * 60}px;
-  padding: 0 0.6rem;
+  padding: 0 clamp(0.4rem, 2vw, 0.5rem);
   background-color: ${(props) =>
     props.type === 'hot'
       ? 'var(--point, #FF4A11)'
@@ -125,7 +126,7 @@ export const TagStyle = styled.div`
       ? 'var(--CL-blue, #214AEE)'
       : 'var(--CL-yellow, #FFEA7D)'};
   color: ${(props) => (props.type === 'new' ? 'var(--CL-blue, #214AEE)' : 'white')};
-  font-size: 0.75rem;
+  font-size: clamp(0.625rem, 2.5vw, 0.75rem);
   font-weight: bold;
   border-radius: 0.1875rem;
   line-height: 1;
