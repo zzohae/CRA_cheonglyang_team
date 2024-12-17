@@ -15,7 +15,7 @@ export default function Mainpage({ incartNum, setIncartNum }) {
   return (
     <div>
       <C1visual></C1visual>
-      <Topad className='d-sm-none'></Topad>
+      <Topad className='d-sm-none mobile'></Topad>
       <div className='d-flex flex-column align-items-center overflow-hidden mainPageLayout'>
         <C2mdpick></C2mdpick>
         <C3best incartNum={incartNum} setIncartNum={setIncartNum}></C3best>

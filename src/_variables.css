@@ -15,8 +15,11 @@
 
   /* border-radius */
   --radius-full: 100px;
-  --radius-s: 0.3125rem;
-  --radius-m: 0.625rem;
+  --radius-3: 0.1875rem;
+  --radius-5: 0.3125rem;
+  --radius-8: 0.5rem;
+  --radius-10: 0.625rem;
+  --radius-20: 1.25rem;
 
   /* font size */
   --font-size-34: 2.125rem;

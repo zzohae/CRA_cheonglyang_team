@@ -30,7 +30,7 @@
     left: calc((100vw - 1320px) / 4) !important;
     transform: translate(-50%, -50%);
     bottom: unset !important;
-    border-radius: 1.25rem;
+    border-radius: var(--radius-20, 1.25rem);
     overflow: hidden;
     backdrop-filter: blur(10px);
 
@@ -127,7 +127,7 @@
     padding: 0 20px;
     text-align: center;
     line-height: 1;
-    border-radius: 100px;
+    border-radius: var(--radius-full, 100px);
     border: 1px solid #ccc;
     white-space: nowrap;
     display: flex;
@@ -136,7 +136,7 @@
   }
 
   .swiper-slide img {
-    border-radius: var(--radius-s, 0.3125rem);
+    border-radius: var(--radius-5, 0.3125rem);
   }
   .swiper-slide-next {
     opacity: .5;
@@ -172,7 +172,7 @@
       width: 80vw;
       margin-left: -0.75rem;
       .swiper-slide img {
-        border-radius: 0 var(--radius-s, 0.3125rem) var(--radius-s, 0.3125rem) 0;
+        border-radius: 0 var(--radius-5, 0.3125rem) var(--radius-5, 0.3125rem) 0;
         width: 100%;
       }
     }
@@ -219,7 +219,7 @@
   .ratingNum {
     order: unset;
     line-height: 1;
-    color: #FF4A11;
+    color: var(--point, #FF4A11);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: -2px;
@@ -257,12 +257,12 @@
     align-items: flex-end;
     z-index: 10;
     h6 {
-      color: #666;
+      color: var(--text-importance-1, #666);
       font-size: 22px;
       font-weight: 500;
     }
     p {
-      color: #888;
+      color: var(--text-importance-2, #888);
       font-size: 16px;
       font-weight: 300;
       line-height: 135%;
@@ -290,7 +290,7 @@
   .liveimg {
     background: url(../../../public/asset/img/live.jpg) center no-repeat;
     background-size: cover;
-    border-radius: var(--radius-s, 0.3125rem);
+    border-radius: var(--radius-5, 0.3125rem);
     height: 100%;
     @media (max-width: 991px){
       height: 400px;
@@ -327,7 +327,7 @@
         gap: 7px;
         span {
           line-height: 1;
-          color: #FF4A11;
+          color: var(--point, #FF4A11);
           font-family: Pretendard;
           font-size: 16px;
           font-weight: 500;
@@ -343,7 +343,7 @@
           gap: 10px;
           width: 100%;
           img {
-            border-radius: 0.3125rem;
+            border-radius: var(--radius-5, 0.3125rem);
             width: 80px;
             height: 80px;
           }
@@ -351,7 +351,7 @@
             width: 100%;
             text-align: justify;
             word-break: break-all;
-            color: #666;
+            color: var(--text-importance-1, #666);
             display: block;
             display: -webkit-box;
             -webkit-box-orient: vertical;

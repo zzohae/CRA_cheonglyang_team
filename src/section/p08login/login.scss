@@ -3,7 +3,7 @@
     margin: 0 auto;
     .lineCont {
       padding: 0 0 1rem 0;
-      border-bottom: 1px solid #214AEE;
+      border-bottom: 1px solid var(--CL-blue, #214AEE);
       p {
         color: var(--text-importance-3, #AAA);
         font-weight: 300;
@@ -54,8 +54,8 @@
     }
 
     input {
-      border: 1px solid #d2d2d2;
-      border-radius: 0.3125rem;
+      border: 1px solid var(--bg-gray-1, #D2D2D2);
+      border-radius: var(--radius-5, 0.3125rem);
     }
 
     select {
