@@ -39,7 +39,7 @@ export default function BestProduct({ rowclass, prdId, img, prodName, store, ori
         <img className="prodimg" src={img} alt={prodName} />
       </Link>
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-stretch align-items-md-end h-100">
-        <dl className="prodInfo d-flex flex-column align-items-start justify-content-center justify-content-md-between">
+        <dl className="prodInfo d-flex flex-column align-items-start justify-content-center justify-content-md-between pb-1">
           <dt className="productName">{prodName}</dt>
           <dd className="seller">{store}</dd>
           <dd className="price mt-md-auto">
@@ -55,35 +55,43 @@ export default function BestProduct({ rowclass, prdId, img, prodName, store, ori
             </em>
           </dd>
           <p>000개 구매중</p>
-          <div className="mt-3 order-4 d-flex gap-2 align-items-center">
+          <div className="mt-1 order-4 d-flex gap-2 align-items-center">
             <Starwrap rating={rating}></Starwrap>
             <p className="ratingNum">({rating.toFixed(1)})</p>
           </div>
         </dl>
         <div className="order-5 d-flex mobilecart">
         <InCartBtn
-          svgcolor="#D2D2D2"
-          page="mainbest"
-          onClick={() => {
-            setIncartNum((prev) => {
-              const updatedCart = [...prev];
-
-              const existingItemIndex = updatedCart.findIndex(
-                (item) => item.prdId === prdId
-              );
-
-              if (existingItemIndex !== -1) {
-                updatedCart[existingItemIndex].quantity += 1;
-              } else {
-                updatedCart.push({ prdId, quantity: 1 });
-              }
-
-              return updatedCart;
-            });
-          }}
-        >
-          <CartIcon></CartIcon>
-        </InCartBtn>
+            page="mainbest"
+            svgcolor="var(--bg-gray-1, #D2D2D2)"
+            onClick={() => {
+              setIncartNum((prev) => {
+                const updatedCart = [...prev];
+            
+                const existingItemIndex = updatedCart.findIndex(
+                  (item) => item.prdId === prdId
+                );
+            
+                if (existingItemIndex !== -1) {
+                  updatedCart[existingItemIndex].quantity += 1;
+                } else {
+                  updatedCart.push({ prdId, quantity: 1 });
+            
+                  const popupElement = document.createElement('div');
+                  popupElement.innerText = '상품이 장바구니에 담겼습니다!';
+                  popupElement.className = 'popup';
+                  document.body.appendChild(popupElement);
+            
+                  setTimeout(() => {
+                    popupElement.remove();
+                  }, 3000);
+                }
+                return updatedCart;
+              });
+            }}
+            >
+            <CartIcon></CartIcon>
+          </InCartBtn>
           <Btn version="v1" page="mainbest" className='d-md-none'>
             바로 구매
           </Btn>

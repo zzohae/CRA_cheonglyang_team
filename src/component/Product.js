@@ -51,28 +51,38 @@ export default function Product({ rowclass, prdId, img, prodName, store, originp
           </dd>
           <p className='mt-1'>000개 구매중</p>
         </dl>
+        
         <InCartBtn
-          svgcolor="#D2D2D2"
-          onClick={() => {
-            setIncartNum((prev) => {
-              const updatedCart = [...prev];
+            svgcolor="var(--bg-gray-1, #D2D2D2)"
+            onClick={() => {
+              setIncartNum((prev) => {
+                const updatedCart = [...prev];
+            
+                const existingItemIndex = updatedCart.findIndex(
+                  (item) => item.prdId === prdId
+                );
+            
+                if (existingItemIndex !== -1) {
+                  updatedCart[existingItemIndex].quantity += 1;
+                } else {
+                  updatedCart.push({ prdId, quantity: 1 });
+            
+                  const popupElement = document.createElement('div');
+                  popupElement.innerText = '상품이 장바구니에 담겼습니다!';
+                  popupElement.className = 'popup';
+                  document.body.appendChild(popupElement);
+            
+                  setTimeout(() => {
+                    popupElement.remove();
+                  }, 3000);
+                }
+                return updatedCart;
+              });
+            }}
+            >
+            <CartIcon></CartIcon>
+          </InCartBtn>
 
-              const existingItemIndex = updatedCart.findIndex(
-                (item) => item.prdId === prdId
-              );
-
-              if (existingItemIndex !== -1) {
-                updatedCart[existingItemIndex].quantity += 1;
-              } else {
-                updatedCart.push({ prdId, quantity: 1 });
-              }
-
-              return updatedCart;
-            });
-          }}
-        >
-          <CartIcon></CartIcon>
-        </InCartBtn>
       </div>
     </div>
   )
