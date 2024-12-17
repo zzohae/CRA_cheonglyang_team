@@ -87,7 +87,7 @@ export default function StoreInfo() {
 
   return (
     <div className='container storeinfo' style={{ padding: '0 0 150px 0' }}>
-      <MainTitle textColor='var(--CL-blue, #214AEE)' h2size='34px'>매장 소개</MainTitle>
+      <MainTitle textColor='var(--CL-blue, #214AEE)'>매장 소개</MainTitle>
 
       {/* 검색 및 탭 */}
       <div className="row w-100 mt-3 gx-2">

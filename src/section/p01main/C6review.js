@@ -57,7 +57,7 @@ export default function C6review({ incartNum, setIncartNum }) {
 
   return (
     <div className='container d-flex flex-column align-items-start justify-content-center reviewSliderCont'>
-      <MainTitle textColor='#214aee' h2size='34px'>
+      <MainTitle textColor='#214aee'>
         {allData.mainPagetitle[3].title}
       </MainTitle>
       <div className='w-100 mainreviewwrap mb150'>

@@ -81,8 +81,9 @@ export default function C3best({incartNum, setIncartNum}) {
 
   return (
     <div className='container d-flex flex-row align-items-start justify-content-center bestCont'>
-      <div className='row'>
-        <MainTitle textColor='#214aee' h2size='34px'>{allData.mainPagetitle[1].title}</MainTitle>
+      <div className='row overflow-hidden'>
+        <MainTitle textColor='#214aee'>{allData.mainPagetitle[1].title}</MainTitle>
+        <div className='overflow-hidden'>
         <ul className='d-flex justify-content-start mytab border-none m-0'>
           {/* 임시 - 주문 데이터를 만들게 된다면 카테고리별 주문수가 많은 순서대로 4개 카테고리를 잘라 선정 */}
           <li
@@ -98,6 +99,7 @@ export default function C3best({incartNum, setIncartNum}) {
           onClick={() => handleTabClick('fruits')}
           className={selectedTab === 'fruits' ? 'active' : ''}># 과일</li>
         </ul>
+        </div>
         <div className='row align-items-stretch m-0 p-0'>
         {bestProducts.map((v, index) => (
           <BestProduct

@@ -97,6 +97,7 @@ export default function Allproducts({ keyword, incartNum, setIncartNum }) {
       <div className="container">
         <h2 className="categorytitle">{getSearchTitle(searchKeyword)}</h2>
 
+        <div className='overflow-hidden'>
         <ul className="d-flex justify-content-start mytab">
           <li className={`d-flex justify-content-center align-items-center ${!cn ? 'active' : ''}`}>
             <Link to="/products">전체 상품</Link>
@@ -110,6 +111,7 @@ export default function Allproducts({ keyword, incartNum, setIncartNum }) {
             </li>
           ))}
         </ul>
+        </div>
 
         <p className="totalQuan">총 {filteredProducts.length}건</p>
         {filteredProducts.length === 0 ? (

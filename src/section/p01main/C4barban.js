@@ -8,7 +8,7 @@ export default function C4barban() {
     <div className='vw-100 barbanCont'>
       <div className='barbanSubCont container d-flex flex-row align-items-center justify-content-end text-end'>
         <div className='maptext'>
-          <MainTitle textColor='#214aee' h2size='34px' nomargin={true}>청량리종합시장 오시는 길</MainTitle>
+          <MainTitle textColor='#214aee' nomargin={true}>청량리종합시장 오시는 길</MainTitle>
           <h6 className='fs-h6'>다양한 문화와 특별한 경험,<br />
           청량리 종합시장에 직접 찾아와보세요!</h6>
           <p className='d-none d-sm-block'>지역 주민들의 정성 가득한 수공예품과 함께 <span className='d-inline d-lg-none'><br /></span>신선한 재료로 만든 다양한 먹거리를 즐길 수 있습니다.<br />

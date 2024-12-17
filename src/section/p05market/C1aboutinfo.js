@@ -30,7 +30,7 @@ export default function C1aboutinfo() {
 
   return (
     <div className="container p-0">
-            <MainTitle textColor='var(--CL-blue, #214AEE)' h2size='34px'>청량리종합시장</MainTitle>
+            <MainTitle textColor='var(--CL-blue, #214AEE)' >청량리종합시장</MainTitle>
             <div className="row gx-3 mt-3">
               <div className="col-xl-7" style={{ height: "29.625rem", overflow: "hidden" }}>
                 <img

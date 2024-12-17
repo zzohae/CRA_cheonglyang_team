@@ -14,7 +14,7 @@ export default function BestReview({ star, userID, reviewContent, createdAt }) {
         <p className="bestreviewbadge">BEST</p>
       </div>
       <div className="contBot">
-        <div className="col-xl-6">
+        <div className="col-12 col-xl-6">
           <img src="https://via.placeholder.com/170" alt="" />
         </div>
         <ul className="col-xl-6">
