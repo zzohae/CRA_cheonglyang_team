@@ -13,10 +13,11 @@
     <meta property="og:image" content="%PUBLIC_URL%/asset/img/snsshareimg.jpg" />
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
     <script type="text/javascript">
-    if(!wcs_add) var wcs_add = {};
+    if(!wcs_add) var wcs_add = {}; // 중복수집 방지
     wcs_add["wa"] = "feabab31f85850";
     if(window.wcs) {
-    wcs_do();
+      wcs.inflow(); // 유입 경로 추적
+      wcs_do(); // 광고 데이터 전송
     }
     </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo_small.png" />
